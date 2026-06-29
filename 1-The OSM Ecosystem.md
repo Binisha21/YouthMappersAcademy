@@ -2,6 +2,7 @@
 title: "Module 1: The OSM Ecosystem"
 author: "YouthMappers Academy"
 date: "2024"
+updated: "2026"
 ---
 
 # The OSM Ecosystem
@@ -21,7 +22,7 @@ Welcome to Module 1 of the YouthMappers Academy. In this course you will learn a
 ## What is OpenStreetMap?
 
 ### Overview
-OpenStreetMap is a free, open, editable map of the world built by a global community of mapping collaborators. The OpenStreetMap Project can be found at [OpenStreetMap.org], and, to date, has been contributed to by over *six million* volunteers around the world. Data for the map is gathered using a variety of field-based and desktop mapping techniques, including manual surveys, GPS devices, smartphone applications, tracing features from aerial imagery (satellite and drone imagery being the most popular), and imports from other open sources. 
+OpenStreetMap is a free, open, editable map of the world built by a global community of mapping collaborators. The OpenStreetMap Project can be found at [OpenStreetMap.org](http://openstreetmap.org/), and, to date, has been contributed to by over *ten million* volunteers, with over *two million* active contributors around the world. Data for the map is gathered using a variety of field-based and desktop mapping techniques, including manual surveys, GPS devices, smartphone applications, tracing features from aerial imagery (satellite and drone imagery being the most popular), and imports from other open sources. 
 
 What started as a community-based alternative to heavily copyrighted commercial base maps, is now the base map of choice on thousands of web sites, mobile apps, and hardware devices. To become a member, you simply [create an account](https://www.openstreetmap.org/user/new). All of the data within OSM is jointly owned by the contributors, without any usage fees whatsoever.
 
@@ -52,7 +53,7 @@ OpenStreetMap allows us to capture information about features in the physical la
 - The **“where”** being the physical location. 
 - The **“what”** being the additional information that describes or measures those particular features. 
 
-As you’ve already learned, data for the map is collected using a variety of field-based and desktop mapping techniques, including manual surveys, GPS devices, smartphone applications, and tracing features from aerial imagery. This data is stored in the digital map using a rather simple representation system consisting of either point locations, lines, or shapes. This is complemented by a system of labels (called “tags”) that help describe and distinguish one feature from another. We will look at the structure of OSM data in more depth in a later module.
+As you’ve already learned, data for the map is collected using a variety of field-based and desktop mapping techniques, including manual surveys, GPS devices, smartphone applications, and tracing features from aerial imagery. This data is stored in the digital map using a rather simple representation system consisting of either point locations, lines, or shapes. This is complemented by a system of labels (called “tags”) that help describe and distinguish one feature from another. We will look at the structure of OSM data in more depth in a  [*Course 4: The OpenStreetMap Data Model*](https://mmann1123.github.io/YouthMappersAcademy/4-The%20OpenStreetMap%20Data%20Model.html).
 
 OSM started with the individual contributions of dedicated but dispersed mappers all over the world, therefore, original global coverage was somewhat patchy. Due to the improvement of mapping tools (especially the online editors and project management platforms⏤known to the community as “tasking managers”), OSM coverage (and quality) has improved dramatically. In recent years, OSM has also benefited from large scale data imports, especially from national mapping agencies with an open-data policy. This has allowed a head start in many global locations.
 
@@ -74,7 +75,7 @@ The OpenStreetMap community is a dynamic, diverse group of people, ranging from 
 
 
 ### YouthMappers: Who Are We?
-[YouthMappers](https://www.youthmappers.org) is a global community of students, researchers, educators, and scholars that use open geospatial technologies to highlight and directly address development challenges worldwide. YouthMappers was envisioned to fulfill the demand for open geospatial data access in all parts of our world. A generation of empowered young people has emerged, who have become leaders in creating resilient communities and have defined their world by mapping it. We are now a worldwide network of over 350+ student-led chapters and growing! The students are at the epicenter of all we do.
+[YouthMappers](https://www.youthmappers.org/) is a global community of students, researchers, educators, and scholars that use open geospatial technologies to highlight and directly address development challenges worldwide. YouthMappers was envisioned to fulfill the demand for open geospatial data access in all parts of our world. A generation of empowered young people has emerged, who have become leaders in creating resilient communities and have defined their world by mapping it. We are now a worldwide network of over 350+ student-led chapters and growing! The students are at the epicenter of all we do.
 
 The founding partners of the YouthMappers consortium are Texas Tech University, The George Washington University, and West Virginia University. Arizona State University is the lead fiscal and administrative partner, in collaboration with Texas Tech University, The George Washington University, and West Virginia University. The Steering Committee, which is comprised of faculty and scholars from these institutions, supports chapter efforts to build a socially engaged citizenry, enhance long-term scientific capacity, foster youth leadership, and offer meaningful global learning experiences.
 
