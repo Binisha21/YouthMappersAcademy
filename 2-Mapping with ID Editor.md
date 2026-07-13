@@ -27,23 +27,25 @@ In this course, you will learn how to add map features to OpenStreetMap (OSM) us
 
 ## What is iD Editor?
 
-iD Editor is a web-based editor used to create map data on openstreetmap.org. Developed by Mapbox in 2013, this easy-to-use tool is the default option for new mappers wishing to contribute to OSM. Mappers will trace map features from the satellite imagery provided, and tag or label the map features from a set of pre-defined options (points, lines, and areas that define the OSM Data Model). iD requires a stable internet connection, as edits are saved and pushed to OpenStreetMap in real-time.
+iD Editor is a web-based editor used to create map data on openstreetmap.org. Originally developed in 2013 with support from Mapbox and the Knight Foundation, iD is the default editor for new mappers — used by 204,810 mappers (78% of all OSM contributors) in 2024. It is now maintained by the OpenStreetMap Foundation. Mappers will trace map features from the satellite imagery provided, and tag or label the map features from a set of pre-defined options (points, lines, and areas that define the OSM Data Model). iD requires a stable internet connection, as edits are saved and pushed to OpenStreetMap in real-time.
 
-1. To begin mapping, use your new OSM account credentials to log in at www.openstreetmap.org.
+1. If you don't have an OSM account yet, check out [Course 1 The OSM Ecosystem](https://mmann1123.github.io/YouthMappersAcademy/1-The%20OSM%20Ecosystem.html), section 1.6 to get set up.
+   
+2. To begin mapping, use your new OSM account credentials to log in at [www.openstreetmap.org](https://www.openstreetmap.org/#map=4/38.01/-95.84).
 
-2. Using the Search button in the top left-hand corner of the map, or the map navigation tools to the right (zoom in, zoom out, pan), navigate to the location in which you wish to begin mapping. It is always a good idea to begin mapping in a place that is familiar to you so that you can add your local knowledge as you trace from satellite imagery.  
+3. Using the Search button in the top left-hand corner of the map, or the map navigation tools to the right (zoom in, zoom out, pan), navigate to the location in which you wish to begin mapping. It is always a good idea to begin mapping in a place that is familiar to you so that you can add your local knowledge as you trace from satellite imagery.
 
-3. In order to begin the editing session, click on the **Edit** drop-down button in the top left-hand corner of the screen, and choose **Edit with iD (in-browser editor).**
+4. In order to begin the editing session, click on the **Edit** button in the top left-hand corner of the screen. For most new users, this launches iD directly. If you see a drop-down, choose **Edit with iD (in-browser editor).**
 
 ![alt text](Module2_Static/2.1.gif)
 
-4. The map view will change from the basic vector-based map view (points, lines, areas) to the satellite view, and you should be prompted to take the built-in **Walkthrough**. If this is your first time mapping, it is strongly advised to work through this excellent interactive tutorial. (We will go through the basics of mapping in the next few steps, in any case).
+5. The map view will change from the basic vector-based map view (points, lines, areas) to the satellite view, and you should be prompted to take the built-in **Walkthrough**. If this is your first time mapping, it is strongly advised to work through this excellent interactive tutorial. (We will go through the basics of mapping in the next few steps, in any case).
 
 ![alt text](Module2_Static/2.2.png)
 
-5. Once you have completed the **Walkthrough** (or if you have clicked on the **Edit Now** option), you will see the live editing view within iD. While in the editing view, you will see satellite imagery behind any existing map features, as opposed to the standard map.
+6. Once you have completed the **Walkthrough** (or if you have clicked on the **Edit Now** option), you will see the live editing view within iD. While in the editing view, you will see satellite imagery behind any existing map features, as opposed to the standard map.
 
-6. If the option to complete the Walkthrough is not automatically offered on start-up, you can always find it under the **Help** section in the table of contents (the table of contents is to the right of the map window). The **Help** section is only visible after you have logged on and after you have entered editing mode.
+7. If the option to complete the Walkthrough is not automatically offered on start-up, you can always find it under the **Help** section in the table of contents (the table of contents is to the right of the map window). The **Help** section is only visible after you have logged on and after you have entered editing mode.
 
 ## Navigating the Interface
 ![alt text](Module2_Static/2.3.png)
@@ -98,43 +100,44 @@ The following competencies derived from both the Geospatial Technology Competenc
 
 ### The Geospatial Technology Competency Model:
 
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others through interaction with peers and course moderators
+1. **Interpersonal Skills:** Demonstrating the ability to work effectively with others through interaction with peers and course moderators
 
-2. Initiative: Demonstrating gumption at work/school
+2. **Initiative:** Demonstrating gumption at work/school
 
-3. Dependability and Reliability: Displaying responsible behaviors at work/school
+3. **Dependability and Reliability:** Displaying responsible behaviors at work/school
 
-4. 5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
+4. **Lifelong Learning:** Displaying a willingness to learn and apply new knowledge and skills
 
-6. Reading: Understanding written sentences and paragraphs in work-related documents 
+5. **Reading:** Understanding written sentences and paragraphs in work-related documents 
 
-7. Geography: Understanding the science of place and space; geographic skills
+6. **Geography:** Understanding the science of place and space; geographic skills
 
-8. Basic Computer Skills: Using a computer and related applications to input and retrieve information; navigation and file management, and internet and email
+7. **Basic Computer Skills:** Using a computer and related applications to input and retrieve information; navigation and file management, and internet and email
 
-9. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
+8. **Planning and Organizing:** Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
 
-10. Data Quality: Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
+9. **Data Quality:** Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
 
-11. Remote sensing and photogrammetry: Basic introduction
+10. **Remote sensing and photogrammetry:** Basic introduction
 
-12. Geographic Information Systems: Conceptual foundations, including representation and uncertainty
+11. **Geographic Information Systems:** Conceptual foundations, including representation and uncertainty
 
 ### The National Geographic Standards:
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
+- How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+- How to analyze the spatial organization of people, places, and environments on Earth's surface
 
-2. Places and Regions: The physical and human characteristics of places
+2. Places and Regions:
+- The physical and human characteristics of places
 
-3. Human Systems: 
-  - The processes, patterns, and functions of human settlement
-  - Human Systems: How the forces of cooperation and conflict among people influence the division and control of Earth's surface
+4. Human Systems: 
+- The processes, patterns, and functions of human settlement
+- Human Systems: How the forces of cooperation and conflict among people influence the division and control of Earth's surface
 
 4. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+- How human actions modify the physical environment
+- How physical systems affect human systems
 
 5. The Uses of Geography: 
 - How to apply geography to interpret the past
