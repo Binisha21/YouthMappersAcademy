@@ -2,6 +2,7 @@
 title: "Imagery Interpretation"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -29,6 +30,39 @@ Welcome to Module 3 of the YouthMappers Academy. In this course, you will learn 
 ### The Role of Imagery in the OSM Workflow
 Tracing features from satellite imagery is one of the most common ways in which mappers contribute to OpenStreetMap. Imagery allows remote mappers to contribute to global tasks when a crisis arises, and even allows locally-based field mappers to “lay the groundwork” so to speak, before organizing fieldwork campaigns to collect specific, detailed tags.
 
+![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module3_Static/3.2%20Image%20interpretation.webp)
+Figure: A sample of aerial imagery tiles showing the diversity of land cover and land use types a mapper may encounter in OpenStreetMap.
+*Source: Frontiers | Automated road surface classification in OpenStreetMap*
+
+```{admonition} Watch This!
+Did you ever wonder how your camera actually takes a picture? It's all about light - it records the light that objects reflect. This video explores the basic principles used by optical sensors like Landsat, AVIRIS, and other remote sensing sensors to record the things that we can't see with our eyes. It explains the basic principles of the electromagnetic spectrum, bands and spectral resolution in data and the uses of spectral data to answer science questions.
+
+**Watch The Video**: [Mapping the Invisible: Introduction to Spectral Remote Sensing](https://www.youtube.com/watch?v=3iaFzafWJQE&t=22s)
+```
+
+### Two Types of Geospatial Data: Raster and Vector
+Before diving into imagery interpretation, it helps to understand the two fundamental types of geospatial data you will encounter in OpenStreetMap — because everything in this course is about the relationship between them.
+
+#### Raster Data
+Raster data represents the world as a **grid of cells (pixels)**. Each pixel stores a single value — typically a measure of color or brightness. Think of it exactly like a digital photograph: zoom in far enough and you will see individual squares of color. Satellite imagery is raster data.
+
+![alt text](Module3_Static/3.2.png)
+Figure: From real-life to a raster depiction 
+*Source: NEON (The National Ecological Observatory Network)*
+
+Raster data is rich in visual detail but carries **no inherent meaning** on its own. A pixel only knows its color. It cannot tell you whether you are looking at a school, a road, or a river — that interpretation is entirely up to you.
+
+#### Vector Data
+Vector data represents the world using **points, lines, and polygons** — each with attributes (tags) that describe what that feature actually is. Unlike a pixel, a tagged vector feature carries **meaning**. A polygon becomes a hospital. A line becomes a highway. A point becomes a water pump.
+
+![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module3_Static/3.2%20vector)
+Figure: Vector data uses points, lines, and polygons to represent discrete geographic features.
+*Source: UConn Library: Geographic Information Systems (GIS) — Spatial Data Models*
+
+#### From Raster to Vector — What We Do in OSM
+
+When you trace a building outline in iD Editor, you are doing exactly this: converting raster information (a satellite image) into vector data (a tagged polygon in OSM). This 
+conversion — from pixel to feature — is what imagery interpretation is all about.
 
 ### An Introduction to Imagery Interpretation
 
@@ -36,17 +70,16 @@ Most of the imagery available to us in OpenStreetMap is called Natural Color Com
 
 If you are interested in the science behind sensors, and how they capture imagery, please take a closer look [here](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/remote-sensing).
 
-
 ![alt text](Module3_Static/3.1.png)
 *Source: National Ecological Observatory Network (NEON)*
 
 The images we use are stored in digital format by subdividing the entire image area into small equal-sized and similarly shaped areas called pixels. Each pixel represents the brightness of each area with a numeric value or digital number. Data stored in this format is called raster data.
 
-![alt text](Module3_Static/3.2.png)
-Figure: From real-life to a raster depiction 
-*Source: NEON (The National Ecological Observatory Network)*
-
 When we zoom back out we can see how individual pixels create features in the image. The key is to study the image for these recognizable features and turn them into points, lines, and areas (polygons) in OSM. This workflow involves identifying and evaluating individual objects and marking their locations by dropping a point or drawing along a linear feature to create a line, or, by tracing around the perimeter of an object to create an area (or polygon).
+
+```{admonition} Bonus Reading Material!
+To someone wanting to learn more about remote sensing, this [NASA ARSET Fundamentals of Remote Sensing course](https://www.earthdata.nasa.gov/learn/trainings/fundamentals-remote-sensing) is a free, self-paced course covering how satellites and sensors work.
+```
 
 ### Advantages of Vector Data
 
@@ -80,7 +113,7 @@ Although seemingly simple, there are quite a few nuances. For instance, note tha
 ## Sources of Imagery for OSM
 Imagery used for tracing within OSM is acquired directly overhead; this is called a vertical perspective, which provides a top-down view of the area of interest. Imagery within OSM can be obtained from numerous sources including satellites, drones, and airborne sensors. We use these data because they can cover large areas very quickly at very high spatial resolutions. Because of the very high spatial resolution, a large number of pixels make up an object which allows you to visually identify individual objects within the image. 
 
-Global high-resolution imagery is available from a handful of providers (which generously donate access to OSM). These include [Bing](https://azure.microsoft.com/en-us/products/azure-maps/), [ESRI](https://www.esri.com/en-us/home), [Mapbox](https://www.mapbox.com/), and [Maxar (now Vantor)](https://vantor.com). In many cases, we can take advantage of multiple sets of imagery to help us delineate objects on the ground. 
+Global high-resolution imagery is available from a handful of providers (which generously donate access to OSM). These include [Bing](https://wiki.openstreetmap.org/wiki/Bing_Maps), [ESRI](https://www.esri.com/en-us/home), [Mapbox](https://www.mapbox.com/), and [Maxar (now Vantor)](https://vantor.com). In many cases, we can take advantage of multiple sets of imagery to help us delineate objects on the ground. 
 
 For instance, in the bottom example below, we see how Bing and Maxar data can provide meaningful differences that can help us distinguish objects. One critical factor here is shadow. Since these images were taken at different times, we can exploit those differences to help us identify individual buildings. Also, if you look at the bottom image below, the four cars parked in one of the gaps in the buildings gives one a sense of scale and an idea that roads connect to this area.
 
@@ -153,7 +186,7 @@ Looking more closely at the building under the blue arrow, we can turn to the sh
 
 ![alt text](Module3_Static/3.12.png)
 
-Unfortunately, tracing can get even harder in areas with complex arrangements of buildings. Looking at the buildings below, it’s is hard to figure out where one starts and where the other one ends, or if it is a building at all. 
+Unfortunately, tracing can get even harder in areas with complex arrangements of buildings. Looking at the buildings below, it is hard to figure out where one starts and where the other one ends, or if it is a building at all. 
 
 ![alt text](Module3_Static/3.13.png)
 
@@ -229,7 +262,8 @@ The following competencies derived from both the Geospatial Technology Competenc
   - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
   - How to analyze the spatial organization of people, places, and environments on Earth's surface
 
-2. Places and Regions: The physical and human characteristics of places
+2. Places and Regions: 
+  - The physical and human characteristics of places
 
 3. Human Systems: 
   - The processes, patterns, and functions of human settlement
