@@ -2,6 +2,7 @@
 title: "The OpenStreetMap Data Model"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -17,7 +18,7 @@ jupytext:
 This is the fourth of six courses that make up the Introduction to Mapping with YouthMappers Learning Track.
 
 ## Overview 
-A model is an abstract, simplified representation of reality. From a geographers perspective, a map is a model of the physical world around us. In this module, you will learn about the components of a geospatial data model, and how the OpenStreetMap Data Model differs (and aligns with this). You will learn how we distinguish features in the OSM data model using the tagging system, and how that is employed for symbology and querying. 
+Maps have always been simplified versions of the world around us — but how we store and organize that world has changed dramatically in the digital age. In this course, you will learn how OpenStreetMap organizes geographic data - and why that structure matters for anyone contributing to or using the map. We'll start with the basics of geospatial data models, then explore how OSM's approach (nodes, ways, relations, and tags) compares to traditional GIS, and finally look at how the tagging system is used to describe real-world features consistently across millions of contributors
 
 **What you will learn in this course:**
 - The components of a geospatial data model
@@ -62,22 +63,31 @@ Ultimately, we use the most detailed geometry that we can accurately collect, or
 ## Data Architecture 
 ### What is the data architecture behind OSM?
 
-OSM [organizes geographic data](https://wiki.openstreetmap.org/wiki/Elements) in a slightly different way than traditional GIS programs. The concept of points, lines, and polygons give way to nodes (points) and ways (used for both lines and polygons; a closed “way” is how we represent a polygon in OSM). “Relations” are used to describe the relationships between these features, and, finally, “tags” to capture key pieces of information about each feature, in much the same way as “attributes” in traditional GIS.
+OSM organizes geographic data in a slightly different way than traditional GIS programs. The concept of points, lines, and polygons give way to nodes (points) and ways (used for both lines and polygons; a closed “way” is how we represent a polygon in OSM). “Relations” are used to describe the relationships between these features, and, finally, “tags” to capture key pieces of information about each feature, in much the same way as “attributes” in traditional GIS. 
+
+To learn more about OSM's core data elements (nodes, ways, relations, and tags), see the [OSM Wiki Elements](https://wiki.openstreetmap.org/wiki/Elements) page.
 
 ![alt text](Module4_Static/4.3.png)
+
+```{admonition} Watch This!
+Get a visual introduction to the core building blocks of OpenStreetMap — how nodes, ways, and tags work together to represent the real world as data.
+
+**Watch the Playlist**: [OSM Concepts for Beginners — Nodes, Ways, Relations & Tags](https://www.youtube.com/playlist?list=PLCE6296A33CF47955)
+
+```
 
 ## Tagging Hierarchy 
 
 ### An Introduction to Tagging 
 OpenStreetMap's free tagging system allows us to include an unlimited number of attributes describing each feature. The community agrees on certain key and value combinations for the most commonly used tags, which act as informal standards. However, established users regularly suggest new tags to improve the style of the map; therefore, it is important to keep a close eye on the Wiki, so that you are aware of any additions to the tag library.  
 
-OpenStreetMap has an incredibly detailed [Wiki](https://wiki.openstreetmap.org/), with subpages devoted to commonly used key and value pairs. These feature short descriptions of key/value pairs that relate to particular topics or interests, with images to help the mapper to distinguish the real world feature. Remember: Most features can be described using only a small number of tags, such as a neighborhood road with a classification tag such as highway=residential, complemented with its name using the tag name=*. 
+OpenStreetMap has an incredibly detailed [Wiki](https://wiki.openstreetmap.org/), with subpages devoted to commonly used key and value pairs. These feature short descriptions of key/value pairs that relate to particular topics or interests, with images to help the mapper to distinguish the real world feature. Remember: Most features can be described using only a small number of tags, such as a neighborhood road with a classification tag such as highway=residential, complemented with its name using the tag name=*.
 
 ![alt text](Module4_Static/4.4.jpg)
 
-Every new mapper should visit the [**Map Features Page**](https://wiki.openstreetmap.org/wiki/Map_features) to become familiar with how the system is organized and to identify some of the most commonly used tags. This is an incredibly detailed resource, and somewhat overwhelming at first glanced. 
+Every new mapper should visit the [**Map Features Page**](https://wiki.openstreetmap.org/wiki/Map_features) to become familiar with how the system is organized and to identify some of the most commonly used tags. This is an incredibly detailed resource, and somewhat overwhelming at first glance. 
 
-Don’t be daunted. It takes time and practice to become proficient in tagging!
+**Don’t be daunted. It takes time and practice to become proficient in tagging!**
 
 ### Frequently Used Classifications
 
@@ -108,7 +118,7 @@ This tag set is used to distinguish between different types of roads, streets, o
 
 ```
 
-This tag set is used for the physical identification of a structure. At the most basic level, we use the pairing *building=yes* - this denotes that we have a building structure of some type, but do not know what it is specifically. Building=yes is the most common tag that remote mappers use when tracing buildings from satellite imagery, as it is often impossible to tell whether a building is a home, commercial, or civic property (or some mixture of all) from an aerial perspective. Other popular building tags are *building=residential* and *building=commercial*. These are hard to determine from aerial imagery and *are not used unless the mapper has personal/local knowledge of an area*. The building tag set has many more detailed sub-options, so please take a look at the wiki and become familiar with them all. 
+This tag set is used for the physical identification of a structure. At the most basic level, we use the pairing *building=yes*; this denotes that we have a building structure of some type, but do not know what it is specifically. Building=yes is the most common tag that remote mappers use when tracing buildings from satellite imagery, as it is often impossible to tell whether a building is a home, commercial, or civic property (or some mixture of all) from an aerial perspective. Other popular building tags are *building=residential* and *building=commercial*. These are hard to determine from aerial imagery and *are not used unless the mapper has personal/local knowledge of an area*. The building tag set has many more detailed sub-options, so please take a look at the wiki and become familiar with them all. 
 
 [**Amenity**](https://wiki.openstreetmap.org/wiki/Map_features#Amenity)
 
@@ -125,7 +135,7 @@ This tag set is used to describe how a particular structure is used by the occup
 
 Refer to the information below to learn more about OpenStreetMap Data Model materials. 
 
-[Multipolygons Examples](https://wiki.openstreetmap.org/wiki/Multipolygon_Examples): Multipolygons are an important but sometimes difficult to conceptualize construct in OSM.
+[Multipolygons Examples](https://wiki.openstreetmap.org/wiki/Multipolygon_Examples): A multipolygon is a special relation (type=multipolygon) used to map complex areas. Multipolygons are an important but sometimes difficult to conceptualize construct in OSM.
 
 [Highway Tags for Africa](https://wiki.openstreetmap.org/wiki/Highway_Tag_Africa): There is a dedicated page on the OSM wiki that covers the Typology of Road Networks in African countries. The road conditions in African countries do not always correspond to their economic and social role. A road typology should be based on the road importance and not on the surface or the visual appearance of a road. In some areas, major roads are unpaved and heavily damaged during the rainy season. It is important for remote mappers from other countries to adapt to this reality.
 
@@ -164,18 +174,19 @@ The following competencies derived from both the Geospatial Technology Competenc
 ### The National Geographic Standards:
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
+- How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+- How to analyze the spatial organization of people, places, and environments on Earth's surface
 
-2. Places and Regions: The physical and human characteristics of places
+2. Places and Regions: 
+- The physical and human characteristics of places
 
 3. Human Systems: 
-  - The processes, patterns, and functions of human settlement
-  - Human Systems: How the forces of cooperation and conflict among people influence the division and control of Earth's surface
+- The processes, patterns, and functions of human settlement
+- Human Systems: How the forces of cooperation and conflict among people influence the division and control of Earth's surface
 
 4. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+- How human actions modify the physical environment
+- How physical systems affect human systems
 
 5. The Uses of Geography: 
 - How to apply geography to interpret the past
