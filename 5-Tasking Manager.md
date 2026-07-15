@@ -2,6 +2,7 @@
 title: "Tasking Manager"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -17,7 +18,7 @@ jupytext:
 This is the fifth of six courses that make up the Introduction to Mapping with YouthMappers learning track.
 
 ## Overview 
-You can edit anywhere at any time in OSM but, when a large group of people are all focused on the same geographical area, you can run into trouble with duplicate edits and overlapping features. To ensure optimal coverage of the study area and minimal overlap, we use a web based platform called the OSM Tasking Manager. In this course you will learn how to find and contribute to relevant OSM tasks; how to lock, edit, and release a particular tile, and how to appropriately comment and tag your contributions.  
+You can edit anywhere at any time in [OSM](https://www.openstreetmap.org/#map=5/42.81/-93.12&layers=N) but, when a large number of people are all focused on the same geographical area, you can run into trouble with duplicate edits and overlapping features. To ensure optimal coverage of the study area and minimal overlap, we use a web-based platform called the [OSM Tasking Manager](https://tasks.hotosm.org/). In this course, you will learn how to use the Tasking Manager to contribute to coordinated mapping projects on OpenStreetMap (OSM) — from finding the right project, to locking and editing your task, to communicating with your team and submitting your work correctly.  
 
 **What you will learn in this course:**
 - How to find and contribute to relevant OSM tasks
@@ -28,11 +29,11 @@ You can edit anywhere at any time in OSM but, when a large group of people are a
 
 ## What is the Tasking Manager?
 
-You can edit anywhere at any time in [OSM](https://www.openstreetmap.org/#map=5/42.81/-93.12&layers=N) but, when a large number of people are all focused on the same geographical area, you can run into trouble with duplicate edits and overlapping features. To ensure optimal coverage of the study area and minimal overlap, we use a web-based platform called the [OSM Tasking Manager](https://tasks.hotosm.org/). 
-
 The [OSM Tasking Manager](https://tasks.hotosm.org/) is a platform developed by the [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) that features thousands of coordinated mapping projects from all over the world. For each project, the geographic study area is divided into a grid, allowing each mapper to edit a smaller part of a larger area. The individual cells or squares from the master grid are called “tasks”, and each task is color-coded so that mapper knows which ones are already complete, which ones are currently being mapped, and which ones are open and available for mapping. 
 
 This incredibly effective tasking system allows mappers all over the world to coordinate on specific geographical areas in the most efficient way. 
+
+![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module5_Static/5.0.%20png.png)
 
 ## Navigating the Interface 
 
@@ -41,10 +42,26 @@ To begin, go to the [Tasking Manager website](https://tasks.hotosm.org/). Log in
 
 Once logged on, you can immediately find a project to work on by clicking [explore projects](https://tasks.hotosm.org/explore?omitMapResults=1), or learn more about HOT and the Tasking Manager by clicking [learn](https://tasks.hotosm.org/learn/map).
 
+```{tip} 
+New to the Tasking Manager? Before diving into the steps below, get the big picture first.
+
+**Download the Cheatsheet:** [HOT Tasking Manager — Quick Reference Cheatsheet](https://drive.google.com/file/d/19pckU4Cru-cSz_aclsLsBk-45SQ1Qyy_/view) — a visual overview of the end-to-end mapping workflow: from logging in and selecting a project, to locking a task, editing in iD, and submitting your work correctly.
+
+```
+
+```{admonition} Watch This!
+See how to sign up and log in to the HOT Tasking Manager before you start mapping.
+
+**Watch the Video:** [HOT Tasking Manager — Sign Up Tutorial](https://www.youtube.com/watch?v=wqQdDgjBOvY) *by Missing Maps*
+
+**Note:** This video was recorded in 2020. The sign-up and login steps are the same, but some parts of the interface may look different in the current version.
+```
+
 ### Finding Projects
 
 To find a project to work on, click on "[Explore Projects](https://tasks.hotosm.org/explore?omitMapResults=1)" near the top of the page. This will bring up the dashboard which shows the active projects sorted by priority, with the most urgent project tiles listed first. There is also a toggle button in the upper right corner to turn on/off the project map locator if you would like a visual of current projects.
 
+![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module5_Static/5.3.2.png)
 
 ### Filter Tools
 
@@ -58,9 +75,11 @@ To help you find a task you are interested in, several filter tools are availabl
 
 ## Contribute to a Project 
 ### Reviewing a Project 
-1. Once you find the project you wish to contribute to, click the project card on the dashboard (see image to the right). 
+1. Once you find the project you wish to contribute to, click the project card on the dashboard (see image to the left). 
 
-*NOTE: The tasks used in this lesson may be complete by the time of publication, but don’t worry, you can pick any task that matches your mapping abilities and interests. The HOT Tasking Manager is constantly updated with new projects and mapping opportunities. Always search by organization for the latest projects by YouthMappers.*
+```{note}
+The tasks used in this lesson may be complete by the time of publication, but don't worry, you can pick any task that matches your mapping abilities and interests. The HOT Tasking Manager is constantly updated with new projects and mapping opportunities. Always search by **organization** for the latest projects by YouthMappers.
+```
 
 2. This will bring up the overview page of the project which will present additional information, such as who set up the project, why it is important, what features to map or imagery to use, and a detailed description.  
 
@@ -72,7 +91,9 @@ To help you find a task you are interested in, several filter tools are availabl
 
 3. As you scroll down the page you’ll also see information on who can map and validate this project (beginner, intermediate mapper, or advanced mapper), a space to post questions and comments, any previous contributors, and the contributions timeline.
 
-*NOTE: Additional components can be found at the bottom of the task description. Notice in the image above the bottom bar includes Overview, Description, Coordination, Teams & Permissions, Questions & Comments, and, Contributions.*
+```{note}
+Additional components can be found at the bottom of the task description. TNotice in the image above the bottom bar includes **Overview**, **Description**, **Coordination**, **Teams & Permissions**, **Questions & Comments**, and **Contributions**.
+```
 
 ### Mapping a Task
 1. To begin mapping, click the *Contribute* button in the bottom right-hand corner of the screen.
@@ -95,7 +116,9 @@ To help you find a task you are interested in, several filter tools are availabl
 
 1. Tasking Manager tasks remain locked for two hours or until you decide you are finished mapping, if earlier than two hours. When you finish mapping in your task, first you will need to save your edits in iD Editor by clicking on the “Save” button. Just like a regular iD editing session, you will be prompted to add a “Commit Message” before saving. When your iD session is launched from the HOT Tasking Manager, a pre-populated message will appear in the “Commit Message” box. You can add your own comments to this if you wish.
 
-*NOTE: Please make sure to add the #YouthMappers hashtag whenever appropriate.*
+```{important}
+Always include the **#YouthMappers** hashtag in your changeset comment when mapping as part of a YouthMappers chapter activity or event. This allows your contributions to be tracked in OSM statistics and recognised by the community.
+```
 
 2. When the commit message is entered, scroll down and click the blue “Upload” button near the bottom of the left panel to finish the save procedure. You can now trace more features in the same task or finish your mapping session by updating the Task Status in the right pane as described above.
 
@@ -126,6 +149,14 @@ YouthMappers Blogspot: A Hot Experience with HOT
 
 In this collaborative blog post, Mercy, Michael, and Victor speak about their participation in the 2020 HOT Data Quality internship program. A virtual network of 70 students from 24 different countries used the HOT Tasking Manager platform (among other open source tools) to train and coordinate on data cleaning (validation) for future disaster response efforts.
 
+```
+
+```{tip}
+**YouthMappers Blogspot: Fellows Action in DRRM and Anticipatory Actions**
+
+By **Nishan Kumar Aryal**, YouthMappers Regional Ambassador — Asia Pacific
+
+[YouthMappers Fellows Action in DRRM and Anticipatory Actions](https://www.youthmappers.org/post/youthmappers-fellows-action-in-drrm-and-anticipatory-actions) — *Following the 2023 Jajarkot earthquake in Nepal, YouthMappers fellows coordinated with OSM Nepal, Kathmandu Living Labs, and local government to provide emergency mapping support. This blog shows the Tasking Manager in action for real disaster response — and what it looks like when coordinated mapping saves lives.*
 ```
 
 ## Communicating on the Platform
@@ -189,35 +220,45 @@ The following competencies derived from both the Geospatial Technology Competenc
 
 ### The Geospatial Technology Competency Model:
 
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
+1. Interpersonal Skills: 
+- Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
 
 2. Professionalism: 
-  - Demonstrating commitment to the values, standards of conduct, and well being of one's profession  
-  - Participate in professional organizations; know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
+- Demonstrating commitment to the values, standards of conduct, and well being of one's profession  
+- Participate in professional organizations; know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
 
-3. Initiative: Demonstrating gumption at work/school  
+3. Initiative: 
+- Demonstrating gumption at work/school  
 
-4. Dependability and Reliability: Displaying responsible behaviors at work
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work
 
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
 
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
 
-7. Basic Computer Skills: Using a computer and related applications to input and retrieve information; navigation and file management, and internet and email
+7. Basic Computer Skills: 
+- Using a computer and related applications to input and retrieve information; navigation and file management, and internet and email
 
-8. Teamwork: Working cooperatively with others to complete projects
+8. Teamwork: 
+- Working cooperatively with others to complete projects
 
-9. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
+9. Planning and Organizing: 
+- Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
 
-10. Data Quality: Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
+10. Data Quality: 
+- Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
 
-11. Software and Application Development: Evaluate open source software
+11. Software and Application Development: 
+- Evaluate open source software
 
 ### The National Geographic Standards:
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
+- How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+- How to analyze the spatial organization of people, places, and environments on Earth's surface
 
 2. Places and Regions: 
 - The physical and human characteristics of places
