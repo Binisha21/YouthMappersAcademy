@@ -48,6 +48,27 @@ jobs:
           path: _build/html/reports/
           if-no-files-found: ignore
 
+  # --- Required check: every image reference must resolve ---------------
+  # Offline validation (no network) that each ![](...) / {image} / {figure}
+  # / <img> points at a real file, and that no image uses a GitHub /blob/
+  # URL (which serves an HTML page, not the image). Complements the build:
+  # it pinpoints the offending file/line and catches remote image URLs that
+  # Sphinx treats as plain external links and never renders.
+  check-images:
+    name: Check image paths (must pass)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Pure standard library -- no dependencies to install.
+      - name: Validate image references
+        run: python .github/scripts/check_image_paths.py
+
   # --- Advisory check: report dead links, but do NOT block the PR -------
   # External sites go down / rate-limit / block bots, so a red here is
   # often not the contributor's fault. Review the report, don't gate on it.
