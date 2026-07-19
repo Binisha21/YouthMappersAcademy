@@ -30,7 +30,7 @@ Welcome to Module 3 of the YouthMappers Academy. In this course, you will learn 
 ### The Role of Imagery in the OSM Workflow
 Tracing features from satellite imagery is one of the most common ways in which mappers contribute to OpenStreetMap. Imagery allows remote mappers to contribute to global tasks when a crisis arises, and even allows locally-based field mappers to “lay the groundwork” so to speak, before organizing fieldwork campaigns to collect specific, detailed tags.
 
-![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module3_Static/3.2%20Image%20interpretation.webp)
+![alt text](Module3_Static/3.2Imageinterpretation.png) 
 Figure: A sample of aerial imagery tiles showing the diversity of land cover and land use types a mapper may encounter in OpenStreetMap.
 *Source: Frontiers | Automated road surface classification in OpenStreetMap*
 
@@ -55,8 +55,9 @@ Raster data is rich in visual detail but carries **no inherent meaning** on its 
 #### Vector Data
 Vector data represents the world using **points, lines, and polygons** — each with attributes (tags) that describe what that feature actually is. Unlike a pixel, a tagged vector feature carries **meaning**. A polygon becomes a hospital. A line becomes a highway. A point becomes a water pump.
 
-![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module3_Static/3.2%20vector)
-Figure: Vector data uses points, lines, and polygons to represent discrete geographic features.
+![alt text](Module3_Static/3.2vector.png)
+
+Figure: Vector data uses points, lines, and polygons to represent discrete geographic features.  
 *Source: UConn Library: Geographic Information Systems (GIS) — Spatial Data Models*
 
 #### From Raster to Vector — What We Do in OSM
