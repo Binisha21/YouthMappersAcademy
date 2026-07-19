@@ -33,7 +33,7 @@ The [OSM Tasking Manager](https://tasks.hotosm.org/) is a platform developed by 
 
 This incredibly effective tasking system allows mappers all over the world to coordinate on specific geographical areas in the most efficient way. 
 
-![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module5_Static/5.0.%20png.png)
+![alt text](Module5_Static/5.0.png)
 
 ## Navigating the Interface 
 
@@ -61,7 +61,7 @@ See how to sign up and log in to the HOT Tasking Manager before you start mappin
 
 To find a project to work on, click on "[Explore Projects](https://tasks.hotosm.org/explore?omitMapResults=1)" near the top of the page. This will bring up the dashboard which shows the active projects sorted by priority, with the most urgent project tiles listed first. There is also a toggle button in the upper right corner to turn on/off the project map locator if you would like a visual of current projects.
 
-![alt text](https://github.com/Binisha21/YouthMappersAcademy/blob/Patch/Course_Updates/Module5_Static/5.3.2.png)
+![alt text](Module5_Static/5.3.2.png) 
 
 ### Filter Tools
 
