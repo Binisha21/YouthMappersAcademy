@@ -14,61 +14,111 @@ jupytext:
 # Introduction to Mapping with JOSM 
  
 ## Overview 
-Welcome to Course 7 of the Youthmappers Academy. In this module, we will take a look at JOSM, or, the Java OpenStreetMap Editor. JOSM is a desktop editing application for OpenStreetMap, written in Javascript, which provides a whole host of advanced editing 
+Welcome to Course 7 of the Youthmappers Academy Advanced Track. In this module, we will take a look at JOSM, or the Java OpenStreetMap Editor. JOSM is a powerful desktop editing application for OpenStreetMap, written in Java, which provides a whole host of advanced editing 
 tools for working with OSM data. JOSM is also the preferred tool for validation in OSM (we’ll talk a little more about validation in the next module). Apart from the advanced editing functionality of JOSM, one of its primary benefits is that it allows you to download and work on OSM data offline, which is incredibly beneficial in low/no bandwidth areas. 
+
+If you have been following the YouthMappers Academy learning track, you will already be familiar with iD Editor from [Course 2](https://mmann1123.github.io/YouthMappersAcademy/2-Mapping%20with%20ID%20Editor.html), and with the OSM data model from [Course 4](https://mmann1123.github.io/YouthMappersAcademy/4-The%20OpenStreetMap%20Data%20Model.html). This course builds on both of those foundations. If you have not yet completed those courses, we recommend doing so before proceeding. 
+
+**By the end of this course, you will be able to:**
+- Install and configure JOSM on your operating system
+- Navigate the JOSM interface, including its toolbars, panels, and preferences
+- Use JOSM's drawing and tagging tools to map nodes, ways, and areas
+- Download, edit, and upload real OSM data using JOSM
+- Identify and resolve common upload errors
+
 
 ## What is JOSM?
 ### Overview 
-Java OpenStreetMap Editor (JOSM) is an advanced desktop editing application for OpenStreetMap, written in Javascript. It runs on Windows, Mac OS, and Linux operating systems, so is widely accessible. Mappers “check-out” or “download” OSM data to edit offline (which is a huge advantage in low bandwidth areas). When editing is complete, mappers “push” or “upload” their data back to the OSM server. There are built-in checks as part of the re-upload process to check for correct geometry and complete tagging. While JOSM supports the editing and re-upload of existing nodes, ways, tags, and relations that have been downloaded from the OSM database, it also supports the editing of stand-alone GPX tracks and GPX track data, before this data is added to OSM. 
+Java OpenStreetMap Editor (JOSM) is an advanced desktop editing application for OpenStreetMap, written in Java. It runs on Windows, macOS, and Linux operating systems, so is widely accessible regardless of your setup. Mappers “check-out” or “download” OSM data to edit offline (which is a huge advantage in low bandwidth areas). When editing is complete, mappers “push” or “upload” their data back to the OSM server. There are built-in checks as part of the re-upload process to check for correct geometry and complete tagging. While JOSM supports the editing and re-upload of existing nodes, ways, tags, and relations that have been downloaded from the OSM database, it also supports the editing of stand-alone GPX tracks and GPX track data, before this data is added to OSM. 
 
-New mappers may find the JOSM interface slightly intimidating, but with practice, most mappers find JOSM to have a much more efficient editing workflow than iD editor, with many great shortcuts to expedite the mapping process.
+
+ ### How does JOSM compare to iD Editor?
+ If you completed Course 2, you are already comfortable mapping in iD Editor. The table below summarizes the key differences to help you understand where JOSM fits in your mapping toolkit:
+
+| Feature | iD Editor | JOSM |
+|---|---|---|
+| Platform | Browser-based | Desktop application |
+| Setup required | None | Installation + Java required |
+| Offline editing | ❌ | ✅ |
+| Learning curve | Lower | Higher |
+| Editing efficiency | Moderate | High |
+| Keyboard shortcuts | Limited | Extensive |
+| Validation tools | Basic | Advanced |
+| Best for | Beginners, quick edits | Experienced mappers, large tasks |
+|
+
+The JOSM interface has more moving parts than iD Editor, and it may take a little time to get used to it. Most mappers, however, find that once they have built familiarity with JOSM's tools and shortcuts, their mapping speed and accuracy improve significantly.
 
 ## JOSM Installation 
-### Overview 
-If you don’t already have a copy of JOSM on your machine, you will need to visit the following link and install the version of JOSM for your operating system: [JOSM Installation Files](https://josm.openstreetmap.de/). 
+### Before You Begin: System Requirements
+
+Before installing JOSM, make sure your machine meets the following minimum requirements:
+
+| Requirement | Minimum |
+|---|---|
+| Operating System | Windows 8+, macOS 10.12+, or Linux |
+| Java Version | **Java 17 or later** |
+| RAM | 2 GB minimum, 4 GB recommended |
+| Disk Space | ~200 MB |
+|
+
+```{warning}
+**Important:** JOSM requires **Java 17 or later** to function correctly. If you are running an older version of Java, JOSM will either fail to launch or behave unexpectedly. Before installing JOSM, verify your Java version at [JOSM Installation Files](https://josm.openstreetmap.de/) and update (if necessary), or, wait for the prompt during the JOSM installation, which will also alert you to update your Java (if necessary).
+
+```
+### Downloading JOSM
+Visit the official JOSM download page at [JOSM Installation Files](https://josm.openstreetmap.de/) and download the appropriate version for your operating system.
 
 There are two main categories of installation available to the user:
 - The **josm.jnpl** option, also known as the “web start” option, allows users to start the application software directly from the internet using a web browser. The main benefit of this option is seamless version updating and greater control of memory allocation. 
 - The **josm-tested.jar** version is the standard desktop installation (which works across all operating systems), but you can also click on the dedicated install links for certain popular OS (windows/macOS) from the front page. 
 
 #### So Which One Should I Choose?
-Every regular JOSM user has a preference for one installation or another. I’ve tried both (.jnpl and dedicated OS install), and both have worked equally well for me. More recently I’ve opted for the .jnpl install, as the automatic updates are a really nice feature. For someone who uses JOSM regularly, it really does cut down on maintenance. 
-
-It is important to note that JOSM requires the most recent version of Java to be installed on your machine in order to function properly. You can either go to [Java Installation](https://www.java.com/en/download/) to check and see that you have the latest version of Java installed, or, wait for the prompt during the JOSM installation, which will also alert you to update your Java (if necessary).
+Every regular JOSM user has a preference for one installation or another. I’ve tried both (.jnpl and dedicated OS install), and both have worked equally well for me. More recently I’ve opted for the .jnpl install, as the automatic updates are a really nice feature. For someone who uses JOSM regularly, it really does cut down on maintenance.
 
 ![alt text](Module7_Static/7.01.png)
 
+
+```{tip}
+When in doubt, choose the native installer for your OS. It is the most straightforward path to a working JOSM installation.
+```
+
 ## Navigating the JOSM Interface 
-### Launch JOSM
-#### Overview 
-##### Launch JOSM 
-When JOSM is launched and loaded, the main interface will look like this: 
+
+### Overview 
+#### Launch JOSM 
+When JOSM is launched and loaded for the first time, you will be greeted by the JOSM start screen. The appearance may differ slightly depending on your operating system. Windows, macOS, and Linux each render the interface with minor visual differences, but the core layout and functionality are identical across all platforms.
 
 ![alt text](Module7_Static/7.02.png)
 
-***Note: Depending on whether you have a PC, Mac, or Linux operating system, the “look and feel” of JOSM will be slightly different, as will the location of some of the menus. Where possible, we will provide both Mac and PC screenshots to help you navigate the most popular options.***
+```{note}
+Depending on whether you have a PC, mac, or Linux operating system, the "look and feel" of JOSM will be slightly different, as will the location of some of the menus. Where possible, we will provide both Mac and PC screenshots to help you navigate the most popular options.
+```
 
-##### Accessing Your Preferences 
+#### Accessing Your Preferences 
 There are quite an array of menus and toolbars in JOSM, with many functions accessible in more than one location. Let’s take a walk-through to familiarize you with the most important ones⏤then we’ll start mapping.
 
 There are a number of key settings that need to be in place before you begin mapping, so let’s look at those first. These settings are found in the JOSM Preference menu. To access the Preferences menu:
 - **PC:** Go to Edit > Preferences
-- **MacOS:** Go to JOSM (in the main Mac toolbar) > Preferences(Refer to the image to the right if using a Mac.) 
+- **macOS:** Go to JOSM (in the main mac toolbar) > Preferences(Refer to the image to the right if using a Mac.) 
 
-##### Mac Visual 
+mac Visual 
 ```{image} Module7_Static/7.03.png
 :alt: alt text
 :width: 100px
 ```
 
-##### The Preferences Menu
+#### The Preferences Menu
 The multiple tabs to the left contain detailed settings for everything from display settings to default colors, default language, and data handling. We won’t go through each one in detail, just one or two key settings to get us up and mapping. But, on your own time, navigate through each to see the level of customization possible to create a very personalized editing experience within JOSM.
 
 ![alt text](Module7_Static/7.04.png)
 
-***Note: You may have fewer tabs in your view. Additional tabs are associated with customization through plugins.***
 
-#### Connect to the OSM Server 
+```{note}
+You may have fewer tabs in your view. Additional tabs are associated with customization through plugins.
+```
+
+### Connect to the OSM Server 
 The most important setting to specify is your connection to the OSM server, along with your personal OSM credentials. This will ensure that any edits and subsequent uploads that you make to OSM data using JOSM will be attributed to your OSM account. 
 
 To start, click on the OSM Server tab in the Preferences dialog box (this is the sixth tab down on the left-hand side).
@@ -100,7 +150,6 @@ You will receive notification that an OAuth Access token has been granted, which
 :width: 100px
 ```
 
-##### Plug-ins 
 There are many **plug-ins** that you can add to the basic JOSM install to improve functionality and interactions with other platforms. Plug-ins are add-ons or extensions that enhance the capabilities of a software platform, without the need to alter the existing software install. 
 
 In JOSM we have many plug-ins to choose from, including one dedicated to drawing pre-tagged, geometrically accurate buildings, and another that allows us to work with Field Papers more efficiently. 
@@ -110,12 +159,24 @@ We will look at plug-ins in more detail in the next module.
 #### Remote Control 
 The last setting we’re going to set up is **remote control**. This is a particularly important feature if you want your JOSM installation to work with certain websites, like the various OSM Tasking Managers. It will allow your JOSM instance to do things like download data with specific geographic extents, like the extent of a grid cell from the tasking manager. 
 
-- Click on the Remote Control tab from the side menu
-- Choose the settings from the image below:
-![alt text](Module7_Static/7.07.png)
-- Click OK to save the changes to Preferences
 
-***Note: Depending on the changes you have made, you may be prompted to restart JOSM.***
+```{warning}
+Enabling Remote Control opens a local HTTP port on your machine, which means any application running locally can send instructions to JOSM. For this reason, only enable Remote Control if you intend to use JOSM with a Tasking Manager, and only on a machine you trust. Do not enable it on shared or public computers.
+```
+
+To enable Remote Control:
+
+- In the Preferences menu, click on the **Remote Control** tab
+- Check the box labelled **Enable Remote Control**
+- Leave the remaining settings at their defaults unless you have a specific reason to change them (choose the settings from the image below)
+
+![Remote Control Settings](Module7_Static/7.07.png)
+
+- Click **OK** to save the changes to Preferences
+
+```{note}
+Depending on the changes you have made in Preferences, JOSM may prompt you to restart the application. If prompted, save any open work and restart.
+```
 
 ## Tour the Interface 
 ### Map View 
@@ -134,7 +195,9 @@ Before we download or edit any live data, let’s tour the JOSM interface and pr
 
 The main window or panel within the interface (the part which is currently black) is called the Map View. This is where the data is displayed and where the editing takes place.
 
-Surrounding the Map View panel, you will see various toolbars and menus. These toolbars and menus are customizable depending on which plugins you have installed. Therefore, your view may differ slightly from the screenshots.
+```{note}
+Your interface may look slightly different from the screenshots in this course, depending on your operating system and which plugins you have installed. The core layout, however, remains consistent.
+```
 
 ### Toolbars 
 
@@ -158,6 +221,10 @@ These are the **preset tagging tools**, for popular road/street, transport, and 
 
 ![alt text](Module7_Static/7.12.png)
 
+```{tip}
+All toolbars in JOSM are customizable. You can add, remove, and rearrange toolbar buttons via **View > Toolbars**. Your toolbar layout may differ from the screenshots in this course if you have made any customizations or installed additional plugins.
+```
+
 ### Information Panels 
 The Information Panels to the right of the Map Frame show information about the data in JOSM, the different layers in the view, the imagery being used, how objects are tagged, and who the last mapper to edit a feature was.
 
@@ -173,10 +240,16 @@ You can customize which panels you’d like to feature in this bar on the right-
 :width: 160px
 ```
 
-***Note: The options you see in your Windows drop-down list will depend on the plug-ins that you have installed on your machine.***
+```{note}
+The options you see in your Window menu will depend on the plugins you have installed on your machine.
+```
 
 ### Status Bar 
-Finally, at the bottom of the JOSM window, the Status Bar gives coordinates and measurements for features, as well as a hint of the current tools.
+At the very bottom of the JOSM window, the Status Bar displays real-time information about your editing session: 
+- Coordinates of your cursor's current position on the map
+- Measurements for features, such as the length of a way, segment, or the area of a polygon as you draw
+- Tool hints which is a short description of what the currently active tool does
+- The Status Bar is particularly useful during precision editing, where you may need to verify the exact position or dimensions of a feature.
 
 ![alt text](Module7_Static/7.15.png)
 
@@ -188,14 +261,35 @@ Remember, we first covered OSM data types in Course 2 when we learned how to dra
 Here is a quick reminder:
 ![alt text](Module7_Static/7.16.png)
 
+```{tip}
+If you have not yet completed Course 4, we recommend doing so before proceeding. A solid understanding of the OSM data model will make the tagging sections of this course significantly easier to follow.
+```
+
 #### JOSM Basic Editing Tools
-- **Select:** For selecting elements, viewing/editing their tags, and moving them (Keyboard shortcut: S for PC and MacOS). Just click on the “Select” tool and use the left mouse button to select and/or move your object.
-- **Draw:** For adding elements such as standalone nodes, adding new nodes to create a new way, or extending an existing way (Keyboard shortcut: A for PC and MacOS).
-- Delete: Delete is for deleting elements. You simply select a feature (using the select tool) and then use the delete button on your keyboard (PC) or Fn+delete (MacOS). Alternatively, you can enter into Delete Mode which will delete every feature you left-click on with your mouse. You can enter into Delete mode by:
-  - Shortcut Key (Keyboard shortcut: Ctrl+Delete (PC), Fn+delete (MacOS)
-  - Mode Menu (Which will add an icon to your edit toolbar).
+
+JOSM's three primary editing tools are accessed from the left-hand toolbar or via keyboard shortcuts. Learning these shortcuts early will meaningfully speed up your editing workflow.
+
+**i. Select Tool** — Use the Select tool to click on and highlight existing features, view and edit their tags, and move them to a new position. A feature that is actively selected will appear highlighted in red. A feature that is not selected will appear grayed out. This color distinction is important as you can only tag or edit a feature that is actively selected (highlighted in red). Just click on the "Select" tool and use the left mouse button to select and/or move your object.
+
+> ℹ️ Keyboard shortcut: **S** for PC and macOS
+
+**ii. Draw Tool** — Use the Draw tool to add new features to the map, such as standalone nodes, adding new nodes to create a new way, or extensions to existing ways. When the Draw tool is active, your cursor will display a small crosshairs icon as you move over the Map View.
+
+> ℹ️ Keyboard shortcut: **A** for PC and macOS
+
+**iii. Delete Tool** — Delete is for deleting elements. To delete a feature, you simply select a feature (using the select tool) and then use the delete button on your keyboard (PC) or Fn+delete (macOS).
+
+> ℹ️ Keyboard shortcut: **Delete** (Windows) / **Fn+Delete** (macOS)
+
+You can also enter **Delete Mode**, which allows you to delete features by clicking on them directly without having to select them first.
+
+To enter Delete Mode, go to **Mode > Delete** from the top menu, which will add a Delete icon to your edit toolbar. Once Delete Mode is active, click on any node, way segment, or way to remove it.
+
 ![alt text](Module7_Static/7.17.png)
-  - Once you've activated Delete Mode, click on nodes, way segments, and ways to delete them. 
+
+```{warning}
+Be careful when using Delete Mode — it is easy to accidentally delete features you did not intend to. Exit Delete Mode by switching back to the Select tool (shortcut: **S**).
+```
 
 #### JOSM Basic Navigation 
 ```{image} Module7_Static/7.18.png
@@ -204,8 +298,13 @@ Here is a quick reminder:
 ```
 
 Moving about can be a little different in JOSM than in other mapping software or platforms, but you’ll soon get the hang of it.
-- Drag the map: Hold down the right mouse button
-- Zoom in/out: Use your scroll wheel
+
+| Action | How to do it |
+|---|---|
+| Pan/Drag the map | Hold down the **right mouse button** and drag |
+| Zoom in/out | Use your **scroll wheel** |
+| Zoom to a selected feature | Press **Ctrl+Shift+F** |
+|
 
 ```{tip} 
 YouthMappers Blogspot:  A YouthMappers Introduction to Java OpenStreetMap (JOSM)
@@ -217,15 +316,17 @@ Hear from Alysa as she talks us through learning JOSM as a non-technical student
 ```
 
 #### Drawing a Node 
-To draw a standalone node:
-
+A standalone node represents a single point feature — a bench, a tree, a fire hydrant, or any point of interest. To draw a standalone node:
 - Click on the Draw/Add tool (keyboard shortcut: A). When you move your mouse over the Map View, you will see a little crosshairs icon.
 
 - Double-click quickly on the left mouse button to create a single node.
-***Note: If you don’t double-click quickly enough, your draw tool may stay activated, and attempt to draw a line. If this happens, hit escape on your keyboard, and your drawing will revert to a single node.***
+
+```{warning}
+**Common mistake:** If you don't double-click quickly enough, your draw tool may stay activated, and attempt to draw a line. If this happens, hit **Escape** on your keyboard, and your drawing will revert to a single node.
+```
 
 #### Drawing a Way 
-To draw a way:
+A way represents a linear feature such as: a road, a footpath, a river, or any connected sequence of points. To draw a way:
 
 - Click on the Draw/Add tool (***keyboard shortcut: A***). 
 
@@ -238,7 +339,7 @@ To draw a way:
 - To finish the way, either double click, click on the Select tool (***keyboard shortcut: S***), or hit the Escape button on your keyboard.
 
 #### Drawing an Area 
-Drawing an area in JOSM is much the same as drawing a way⏤the only difference is that you have to close or complete the area by deliberately returning to the first node you drew and double-clicking. This is essentially “closing” the way.
+Drawing an area in JOSM is much the same as drawing a way⏤the only difference is that you have to close or complete the area by deliberately returning to the first node you drew and double-clicking. This is essentially “closing” the way. To draw an area: 
 
 - Once again, click on the Draw/Add tool (***keyboard shortcut: A***). 
 
@@ -247,7 +348,10 @@ Drawing an area in JOSM is much the same as drawing a way⏤the only difference 
 - Keep clicking to continue to draw an area with several additional nodes. 
 
 - When you have defined the shape of your area, double-click once more on the starting node to complete it.
-***Note: You might have to check to make sure that you are “snapping” to the right node before you commit to your last double-click.***
+
+```{note}
+You might have to check to make sure that you are "snapping" to the right node before you commit to your last double-click.
+```
 
 #### Tagging 
 We learned about tagging in both courses  2 and 4, but as a quick refresher:
@@ -285,19 +389,20 @@ You will have to develop a certain familiarity with the OSM data model in order 
 
 [Click here](https://wiki.openstreetmap.org/wiki/Map_features) to navigate to the Map Features OSM main page.
 
-#### Using the Preset Tagging Menu 
-Another way to approach tagging is to use JOSM’s preset tagging menus, as they have a nicely organized hierarchy of tags. There are two ways to access the preset tagging: either through the drop-down menu or the toolbar. 
+#### Preset Tagging via the Presets Menu 
+JOSM's Presets menu offers a structured, hierarchical collection of tag templates for common feature types. Instead of entering tag keys and values manually, you select a feature type from the menu (see the image below) and JOSM presents a detailed tagging form with all relevant fields pre-organized for you.
 
-First, let's look at the drop-down menu:
+There are two ways to access presets:
 
+- Via the Presets drop-down menu at the top of the screen (comprehensive, organized neatly by thematic categories)
+- Via the Preset toolbar (quick access to the most frequently used presets)
 ![alt text](Module7_Static/7.22.png)
-
-The tagging drop-down menu is a highly comprehensive menu of tagging choices, arranged neatly into thematic categories. This is incredibly helpful if you are still rather new to the OSM data model, though it will still take time to learn where all your favorites reside. 
 
 ##### Tagging a (Fictional) Restaurant
 Let’s take a look at the process of tagging a (fictional) restaurant. 
 
 - Draw a node in the map view
+
 ***Note: Remember, we need a feature to attach the tag to, and that feature needs to be highlighted/active for us to tag it.***
 
 - Click on Presets > Facilities > Food + Drinks > Restaurant
@@ -326,6 +431,10 @@ You may edit any of these individual tags at any time by clicking on the Edit op
 ![alt text](Module7_Static/7.12.png)
 
 The tagging toolbar presents a slightly more restricted selection of tag choices but does feature several of the more frequently used tags. The detailed tagging interface you will encounter is exactly the same as that found under the Preset drop-down, so it’s really just personal preference as to which of these handy tagging tools you may use. You will not need any of the features that you have created or tagged up to this point, so there is no need to save your work unless you want to.
+
+```{tip}
+The Presets menu is an excellent way to explore the OSM data model. Browsing through its categories gives you a sense of the full range of features that OSM can represent, which is particularly useful when designing a field data collection survey.
+```
 
 ### Shortcuts in JOSM 
 One of my favorite aspects of working in JOSM is the many keyboard shortcuts you can use to streamline your mapping workflow. Instead of having to locate a specific tool from a toolbar (or buried several levels deep in an editing menu), you can activate that same tool using a single keyboard shortcut. This may not seem like a timesaver right now (especially when you will have to learn what shortcut goes with what tool), but when you become familiar with them you will see a noticeable difference in the speed and efficiency with which you map!
@@ -363,9 +472,11 @@ One of the main benefits of working with JOSM is that you create and update data
 - **Tile Numbers:** In this tab, you can specify a specific tile address to locate and download.
 
 My favorite way to locate the area I wish to map is to find it on www.openstreetmap.org, copy the url, and then use the Bounding Box tab to jump immediately to that area. Take a look here: 
+
 ![alt text](Module7_Static/7.29.png)
 
 What I also like about this option is that you can check the area you wish to download BEFORE you click on that Download button, by hopping back to the Slippy Map tab after you’ve pasted the URL from www.openstreetmap.com. 
+
 ![alt text](Module7_Static/7.30.png)
 
 The editing interface and the appearance of the downloaded OSM data are quite different to what we are used to in iD editor. 
@@ -386,6 +497,10 @@ Unless you are working with a Tasking Manager, such as the HOT Tasking Manager, 
 I’m choosing Bing imagery for my editing session as I have edited in this area before and I know that it has the best resolution and is the most current.
 
 ![alt text](Module7_Static/7.34.png)
+
+```{warning}
+**Imagery offset:** Not all imagery sources are perfectly aligned with GPS ground truth. When an imagery layer is slightly misaligned relative to the actual position of features on the ground, this is called an **imagery offset**. Mapping from offset imagery introduces positional errors into OSM. Before you begin tracing, always check your imagery against any existing GPS traces or well-mapped features in the area to identify potential offset. If an offset is present, it can be corrected in JOSM via **Imagery > New offset**. When in doubt, cross-reference two or more imagery sources to identify the most reliable one for your area.
+```
 
 You can add several different imagery sources to your JOSM editing session, and you can switch between them quickly and easily to assist your editing decisions. You can turn the imagery layer on and off and also adjust the opacity, contrast, and sharpness of the image.  
 
@@ -429,6 +544,10 @@ These side by side images show the same area (with main road highlighted for ref
 
 - To tag your building, click on the Edit button in the Tags/Membership window, and select “Building” and “Yes”
 ![alt text](Module7_Static/7.39.png)
+
+```{tip}
+**Why orthogonalize?** Real buildings almost always have right-angle corners. Without the **Q** shortcut, a hand-drawn building footprint will have slightly irregular angles at each corner. Orthogonalizing corrects this automatically — it is a small step that makes a significant difference to data quality.
+```
 
 #### Saving and Uploading Data to OSM
 If you have a reliable connection, it's good practice to save regularly. (Remember, this was a practice we spoke about when mapping with iD editor. It’s the best way to prevent conflicts if there are other active mappers in your area.) 
@@ -553,7 +672,9 @@ To save the edits to your layer file, right-click on the layer in the Layer menu
 
 ![alt text](Module7_Static/7.48.png)
 
-***Tip: Save your version of the file after you make your very first edit. Continue to right-click and save regularly while editing.***
+```{tip}
+Save your version of the file after you make your very first edit. Continue to right-click and save regularly while editing.
+```
 
 ## Conclusion 
 ### Skills, Proficiencies, and Standards 
@@ -565,34 +686,58 @@ The National Geography Standards are benchmarks of geographic literacy to determ
 
 **The Geospatial Technology Competency Model**
 
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
+1. Interpersonal Skills:
+- Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
 2. Professionalism: 
-  a. Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
-  b. Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
-3. Initiative: Demonstrating gumption at work/school
-4. Dependability and Reliability: Displaying responsible behaviors at work/school
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
-7. Geography: Understanding the science of place and space; geographic skills
-8. Science and Engineering: Knowing and applying the principles, rules, and methods of science and engineering to solve problems; subject-specific scientific knowledge
-9. Basic Computer Skills: Using a computer and related applications to input and retrieve information; navigation and file management and internet and e-mail
-10. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
-11. Data Quality: Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
-12. Geographic Information Systems: Conceptual foundations, including representation and uncertainty; digitize and georeference paper map or plate; acquire and integrate various data types in GIS database 
-13. Software and Application Development: Evaluate open source software
-14. Working with Tools and Technology: Selecting, using, and maintaining tools and technology to facilitate work activity
+- Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
+- Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
+3. Initiative: 
+- Demonstrating gumption at work/school
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work/school
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
+7. Geography: 
+- Understanding the science of place and space; geographic skills
+8. Science and Engineering: 
+- Knowing and applying the principles, rules, and methods of science and engineering to solve problems; subject-specific scientific knowledge
+9. Basic Computer Skills: 
+- Using a computer and related applications to input and retrieve information; navigation and file management and internet and e-mail
+10. Planning and Organizing: 
+- Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
+11. Data Quality: 
+- Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
+12. Geographic Information Systems: 
+- Conceptual foundations, including representation and uncertainty; digitize and georeference paper map or plate; acquire and integrate various data types in GIS database 
+13. Software and Application Development: 
+- Evaluate open source software
+14. Working with Tools and Technology: 
+- Selecting, using, and maintaining tools and technology to facilitate work activity
 
 **The National Geography Standards:**
 
-1. The World in Spatial Terms: 
+**1. The World in Spatial Terms:** 
+  
   a. How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+
   b. How to analyze the spatial organization of people, places, and environments on Earth's surface
-2. Places and Regions: The physical and human characteristics of places
-3. Environment and Society: 
+
+**2. Places and Regions:**
+
+a. The physical and human characteristics of places
+
+**3. Environment and Society:**
+
   a. How human actions modify the physical environment;
+
   b. How physical systems affect human systems
-4. The Uses of Geography: 
+
+**4. The Uses of Geography:**
+
   a. How to apply geography to interpret the past
+
   b. How to apply geography to interpret the present and plan for the future
 
 
