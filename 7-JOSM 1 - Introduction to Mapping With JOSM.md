@@ -2,6 +2,7 @@
 title: "Introduction to Mapping with JOSM"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
