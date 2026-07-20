@@ -46,7 +46,7 @@ Java OpenStreetMap Editor (JOSM) is an advanced desktop editing application for 
 | Keyboard shortcuts | Limited | Extensive |
 | Validation tools | Basic | Advanced |
 | Best for | Beginners, quick edits | Experienced mappers, large tasks |
-|
+
 
 The JOSM interface has more moving parts than iD Editor, and it may take a little time to get used to it. Most mappers, however, find that once they have built familiarity with JOSM's tools and shortcuts, their mapping speed and accuracy improve significantly.
 
@@ -61,7 +61,7 @@ Before installing JOSM, make sure your machine meets the following minimum requi
 | Java Version | **Java 17 or later** |
 | RAM | 2 GB minimum, 4 GB recommended |
 | Disk Space | ~200 MB |
-|
+
 
 ```{warning}
 **Important:** JOSM requires **Java 17 or later** to function correctly. If you are running an older version of Java, JOSM will either fail to launch or behave unexpectedly. Before installing JOSM, verify your Java version at [JOSM Installation Files](https://josm.openstreetmap.de/) and update (if necessary), or, wait for the prompt during the JOSM installation, which will also alert you to update your Java (if necessary).
@@ -305,7 +305,6 @@ Moving about can be a little different in JOSM than in other mapping software or
 | Pan/Drag the map | Hold down the **right mouse button** and drag |
 | Zoom in/out | Use your **scroll wheel** |
 | Zoom to a selected feature | Press **Ctrl+Shift+F** |
-|
 
 ```{tip} 
 YouthMappers Blogspot:  A YouthMappers Introduction to Java OpenStreetMap (JOSM)
