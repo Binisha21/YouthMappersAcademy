@@ -2,6 +2,7 @@
 title: "OSM Data Management & Export"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -21,7 +22,7 @@ Most of our early interactions with OSM involve contributing directly to the map
 **In this course, you will:**
 - Learn how to filter and extract OSM data for your own research purposes using several different tools
 - Learn how to assess the quality of OSM data for a given geographic extent or project using a variety of tools and platforms beyond the JOSM Validator
-- sExplore new platforms to share and download supplemental data for your research project
+- Explore new platforms to share and download supplemental data for your research project
 
 ## Exporting Data from OSM 
 ### Overview 
@@ -36,10 +37,9 @@ Map validation is the process of reviewing completed work (both your own and of 
 
 In this course we will look at several of the most popular tools available to filter and extract data from OpenStreetMap:
 
-#### Popular Tools to Filter and Extract Data from OpenStreetMap 
 1. **OpenStreetMap Interface:** Access and download small areas of interest to .osm format. 
 2. **HOT Export Tool:** An open service that creates customized extracts of up-to-date OSM data in various file formats.
-3. **OverPassTurbo:** OverPass Turbo is a web-based data mining tool that allows you to download data from a mirror of the OpenStreetMap database.
+3. **OverPass Turbo:** OverPass Turbo is a web-based data mining tool that allows you to download data from a mirror of the OpenStreetMap database.
 4. **Geofabrik:** Regularly-updated extracts of continents, countries, and selected cities.
 5. **QuickOSM QGIS Plug-in:** QuickOSM is a QGIS plugin to download data from Overpass server.
 
@@ -50,7 +50,7 @@ You can download data directly from the OpenStreetMap website by navigating to y
 
 To prevent extraordinarily large downloads, the Export button will not be enabled until OSM determines you are at a sufficient zoom level to process the data fully. 
 
-When you click the Export tool, all of the features visible in the OSM window will be available for download as a .OSM file.  This file will contain all of the nodes, ways, and relations for that selected geographic area.
+When you click the Export tool, all of the features visible in the OSM window will be available for download as a .OSM file. This file will contain all of the nodes, ways, and relations for that selected geographic area.
 
 ![alt text](Module9_Static/9.01a.png)
 
@@ -84,7 +84,9 @@ You can define your area of interest in a number of ways (and indeed you can mix
 
 ![alt text](Module9_Static/9.01f.png)
 
-***Note: The study area chosen cannot contain more than 10,000,000 OSM nodes. If the total number of nodes exceeds that threshold, the export will fail.***
+```{note}
+The study area chosen cannot contain more than 10,000,000 OSM nodes. If the total number of nodes exceeds that threshold, the export will fail.
+```
 
 - **Name and describe your export.** 
   - Use this space to add context to the dataset. Information such as its location and features downloaded would be helpful to any that wishes to use these data. If the export is part of a larger project or campaign, that information should also be included. Click Next to choose your file format.
@@ -117,7 +119,10 @@ OverPass Turbo is a web-based data mining tool that allows you to download data 
 
 - First, locate your study area using the map on the right of the OverPass Turbo interface. You can use a combination of place name searches, panning tools, and bounding boxes to isolate your study area.
 
-***Note: You will notice that when you run a place name search on OverPass Turbo, it zooms right into the center of your specified location (rather than zooming to its full geographic extent as most other map search functions would). You will need to zoom out to orient yourself and select your study area correctly.***
+```{note}
+You will notice that when you run a place name search on OverPass Turbo, it zooms right into the center of your specified location (rather than zooming to its full geographic extent as most other map search functions would). You will need to zoom out to orient yourself and select your study area correctly.
+```
+
 
 ![alt text](Module9_Static/9.01m.png)
 
@@ -191,7 +196,9 @@ These steps are adapted from this [excellent tutorial from the HOT Toolbox](http
 
 #### Tips for Using QuickOSM Plug-in
 **1. Resources:** For resources on the best Key/Value pairings to use, see [OSM Tagging and Data Models](https://wiki.openstreetmap.org/wiki/Map_features). 
+
 **2. Values:** Multiple values can be strung together by separating with a comma (for example, amenity=school, hospital). To download all possible values of a key (i.e. amenity=*), leave the value field blank.
+
 **3. Error:** If your query is not working: 
 - Did you use capital letters in your keys and values? Make sure keys and values are in lowercase. For example: key=amenity value=school NOT key=Amenity and value=SCHOOL
 - Did you use the correct spelling in your keys and values? Make sure keys and values are spelled EXACTLY as they are in OSM guides. Otherwise, QuickOSM will be looking for the wrong tag. For example: key=amenity NOT key=amenities
@@ -202,16 +209,13 @@ These steps are adapted from this [excellent tutorial from the HOT Toolbox](http
 In Course 8, we were introduced to validation and focused on JOSM as our primary tool for data validation. JOSM is excellent at drilling down on errors and omissions for feature and tag level issues, but sometimes, we need a broader assessment of OSM coverage and quality, especially when we are preparing to launch a remote mapping campaign or embark on a field work program. There are several excellent tools to help us with determining the geographic scope, completeness, and quality of OSM data:
 
 **Name: [JOSM Validator](https://wiki.openstreetmap.org/wiki/JOSM/Validator)**
-**Description:** JOSM Validator is a core feature of the JOSM software, which fixes multiple error types from broken, invalid geometry to missing or incorrect tags.
+- **Description:** JOSM Validator is a core feature of the JOSM software, which fixes multiple error types from broken, invalid geometry to missing or incorrect tags.
 
 **Name: [Osmose](https://osmose.openstreetmap.fr/en/map/#loc=16/46.97/2.75)**
-**Description:** Easy visual interface which gives an overview of data quality with color-coded pins (based on error severity).
+- **Description:** Easy visual interface which gives an overview of data quality with color-coded pins (based on error severity).
 
 **Name: [OSMCha](https://osmcha.org/)**
-**Description:** View and validate specific changesets on a user-by-user basis.
-
-**Name: [Map Campaigner](https://www.hotosm.org/tools/map-campaigner.html)**
-**Description:** Great tool for organizing and monitoring the progress of OSM campaigns. Includes tools tracking completeness and tracking quality of member changesets.
+- **Description:** View and validate specific changesets on a user-by-user basis.
 
 In the context of this module:
 
@@ -222,6 +226,7 @@ In the context of this module:
 **Data Quality:** data quality in OSM refers to how accurately the data in the map reflects reality. Are the features spatially accurate, with well-drawn geometries? Is the tagging information accurate and up to date?
 
 In a couple of words, brainstorm your answer to the following below:
+
 ***Share three of the most frequently occurring feature or tag level issues you have encountered in OSM.***
 
 ### Osmose 
@@ -229,7 +234,7 @@ In a couple of words, brainstorm your answer to the following below:
 
 Osmose is a tool that monitors multiple quality control issues in OSM. These include issues with feature geometry (such as overlapping buildings/nodes, incomplete features, and duplications) and common tagging issues (such as missing, unsuitable, or poorly formatted tags). More information about Osmose can be found at the [Osmose OSM Wiki Page](https://wiki.openstreetmap.org/wiki/Osmose).
 
-- Go to https://osmose.openstreetmap.fr/ in your internet browser (Osmose works best with the Google Chrome internet browser. Firefox, Opera, Safari, and other browsers may not display the information correctly.)
+- Go to https://osmose.openstreetmap.fr/ in your internet browser (Osmose works in all modern web browsers. If you experience display issues, try refreshing the page or clearing your browser cache.)
 
 - Login using your OSM credentials (this isn’t required for most functions, but if you would like the option of fixing tag errors within the platform, you will need to login).
 
@@ -267,7 +272,7 @@ Osmose is a tool that monitors multiple quality control issues in OSM. These inc
 
  OpenStreetMap Changeset Analyzer is a tool designed to review uploads and changes to OSM data, largely to prevent vandalism and bad edits made to map data. This tool allows users to filter by username, location, dates of upload, and other metadata features. OSMCha is useful for monitoring the progress of data cleaning and upload teams.
 
-- Navigate to OSMCha in your internet browser (Google Chrome preferred).
+- Navigate to [OSMCha](https://osmcha.org/) in your internet browser (Google Chrome preferred).
 
 - You will need to sign in with your OpenStreetMap account and grant permission.
 
@@ -303,58 +308,6 @@ Osmose is a tool that monitors multiple quality control issues in OSM. These inc
 
 - You can access your saved filters using the URL or in the My Saved Filters option once you have logged into OSMCha.
 
-### Map Campaigner 
-
-![alt text](Module9_Static/9.14.png)
-
-MapCampaigner is a tool developed by HOT to monitor attribute completeness for predefined areas of interest (AOI). Based on the data model you submit, the tool checks and highlights any map features that are missing pre-defined tags within your AOI, and allows team validators to download and fix those features. 
-
-Map Campaigner is a great tool for
-organizing and monitoring the progress of coordinated OSM projects. 
-
-Let’s create a simple project for illustration:
-- Navigate to https://campaigns.hotosm.org
-  -***Note: Map Campaigner works best in the Google Chrome or Mozilla Firefox internet browsers.***
-
-- Click on Create in the top right corner of your screen.
-
-![alt text](Module9_Static/9.15.png)
-
-- Specify the name, date range, and a description for your project (be thoughtful when selecting the date range, as Map Campaigner will only check attribution completion for data tags added within this window). Click Next.
-
-![alt text](Module9_Static/9.16.png)
-
-- To identify your area of interest, you can either upload a boundary file or navigate there through the pan/zoom functions and draw a bounding box to indicate your AOI. Click Next.
-
-![alt text](Module9_Static/9.17.png)
-
-- Next, you will indicate which map features you wish to track the tagging completeness for. Click on Add a Feature. 
-
-- If you haven’t yet decided on your data mode, there are several different templates available for you to choose from:
-
-![alt text](Module9_Static/9.18.png)
-
-- You can add multiple different templates to each project, as you may wish to check for residential buildings, shops, and/or medical facilities, all within the same project. 
-
-- If you have already designed a specific data model, then use the Custom Form option to select your preferred tags.
-
-![alt text](Module9_Static/9.19.png)
-
-- For this demonstration, I have chosen the simple tag set for buildings from the template provided. Click Next.
-
-![alt text](Module9_Static/9.20.png)
-
-- You will get the option to select additional project managers, who are mappers that are allowed to View the campaign, as well as mappers whose contributions you wish to watch. Enter these OSM usernames in the boxes provided.
-
-![alt text](Module9_Static/9.21.png) 
-- Click Submit and you will be taken to a preliminary Project Overview for your Map Campaign.
-
-- On the map, features are colored by the percent of attributes completed. Select individual features on the map to view the existing tags and missing attributes. If data editing work has yet to start for your area of interest, then you will see something like the project below, where buildings are 0% Complete for the tags specified. 
-
-![alt text](Module9_Static/9.22.png)
-
-- These metrics will change as edits are made to the live map. You will have to refresh your campaign in Map Campaigner, as most edits will not update instantaneously (it typically takes a couple of hours). 
-
 ## Data Sharing and Data Hosting 
 ### Overview 
 #### Data Sharing & Data Hosting 
@@ -370,7 +323,7 @@ Some data we create or use doesn’t match the OSM data model. In this case, we 
 
 ![alt text](Module9_Static/9.23.png)
 
-The [Humanitarian Data Exchange (HDX](https://data.humdata.org/) is an open platform for sharing data across crises and organizations. Launched in July 2014, the goal of HDX is to make humanitarian data easy to find and use for analysis. HDX is managed by OCHA's Center for Humanitarian Data, which is located in The Hague. OCHA is part of the United Nations Secretariat and is responsible for bringing together humanitarian actors to ensure a coherent response to emergencies.
+The [Humanitarian Data Exchange (HDX)](https://data.humdata.org/) is an open platform for sharing data across crises and organizations. Launched in July 2014, the goal of HDX is to make humanitarian data easy to find and use for analysis. HDX is managed by OCHA's Center for Humanitarian Data, which is located in The Hague. OCHA is part of the United Nations Secretariat and is responsible for bringing together humanitarian actors to ensure a coherent response to emergencies.
 
 ![alt text](Module9_Static/9.24.png)
 
@@ -384,7 +337,7 @@ You can create an account on the platform to stay alerted to data uploads from s
 
 ![alt text](Module9_Static/9.26.png)
 
-OpenAerialMap (OAM) is a set of tools for searching, sharing, and using openly licensed satellite and unmanned aerial vehicle (UAV) imagery. All imagery on the platform is publicly licensed and made available through the Humanitarian OpenStreetMap team's Open Imagery Network (OIN) node. All imagery contained in OIN is licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network, and is available to be traced in OpenStreetMap.
+[OpenAerialMap (OAM)](https://openaerialmap.org/) is a set of tools for searching, sharing, and using openly licensed satellite and unmanned aerial vehicle (UAV) imagery. All imagery on the platform is publicly licensed and made available through the Humanitarian OpenStreetMap team's Open Imagery Network (OIN) node. All imagery contained in OIN is licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network, and is available to be traced in OpenStreetMap.
 
 - Click on Start Exploring and use the map to pan and zoom to search available imagery in your area of interest. 
 
@@ -424,7 +377,7 @@ There are many excellent online resources to supplement your exports from OSM. A
 
 - [World Settlement Footprint (WSF)](https://geoservice.dlr.de/web/maps/eoc:wsf2019): The World Settlement Footprint suite consists of several different products, including The World Settlement Footprint 2019 (WSF 2019) and the World Settlement Footprint Evolution (WSF Evolution). WSF 2019 provides information on global human settlements with unprecedented detail and precision, and features data from the Copernicus Sentinel-1 and Sentinel-2 missions, while the WSF Evolution has been generated by processing seven million images from the US Landsat satellite collected between 1985 and 2015 and illustrates the worldwide growth of human settlements on a year-by-year basis.
 
-- [The Global Human Settlement Layer (GHSL)](https://human-settlement.emergency.copernicus.eu/ghs_pop2019.php): This spatial raster dataset depicts the distribution of population, expressed as the number of people per cell. Residential population estimates for target years 1975, 1990, 2000, and 2015 provided by CIESIN GPWv4.10 were disaggregated from census or administrative units to grid cells, informed by the distribution and density of built-up areas.
+- [The Global Human Settlement Layer (GHSL)](https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php): This spatial raster dataset depicts the distribution of population, expressed as the number of people per cell. The most recent release (R2023A) provides residential population estimates for target year 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, and 2020, with projections to 2030. These data were disaggregated from census or administrative units to grid cells, informed by the distribution and density of built-up areas.
 
 **4. Socioeconomic Data** 
 - [CIESIN SEDAC (Socioeconomic Data and Applications Center) - Small Area Estimates of Poverty and Inequality:](https://www.earthdata.nasa.gov/data/catalog/esdis-ciesin-sedac-pmp-saepi-1.0) The Small Area Estimates of Poverty and Inequality dataset consists of consumption-based poverty, inequality, and related measures for subnational administrative units in approximately 20 countries throughout Africa, Asia, Europe, North America, and South America. These measures are derived on a country-level basis from a combination of census and survey data using small area estimates techniques. This service is hosted for NASA by the CIESIN Center at Columbia University New York.
@@ -435,7 +388,6 @@ There are many excellent online resources to supplement your exports from OSM. A
 - [Maxar Open Data Program](https://vantor.com/company/open-data-program/): Maxar (now Vantor) releases high-resolution open imagery for select sudden onset major crisis events from 2010 to 2022.
 
 ## Dig Deeper
-## Want to Dig a Little Deeper?
 - The [OverPass Turbo Wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo) gives a nice overview of the tool and its uses for both mappers and developers. The [OverPass Turbo Wizard Wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard) is very handy if you want to learn some go-to query combinations. 
 
 - The [University of Pennsylvania Library](https://guides.library.upenn.edu/c.php?g=475518&p=3254770) curates an amazingly exhaustive list of geospatial files at the global and regional level, covering everything from boundary to natural biomes. It is cultivated by librarian Lauris Olsen.
@@ -456,35 +408,49 @@ The following competencies derived from both the Geospatial Technology Competenc
 
 The Geospatial Technology Competency Model
 
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others through interaction with peers and course moderators
+1. Interpersonal Skills: 
+- Demonstrating the ability to work effectively with others through interaction with peers and course moderators
 2. Professionalism: 
   - Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
   - Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
-3. Initiative: Demonstrating gumption at work/school
-4. Dependability and Reliability: Displaying responsible behaviors at work/school
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
-7. Geography: Understanding the science of place and space; geographic skills
-8. Science and Engineering: Knowing and applying the principles, rules, and methods of science and engineering to solve problems; subject-specific scientific knowledge
-9. Basic Computer Skills: Using a computer and related applications to input and retrieve information; navigation and file management and internet and e-mail
-10. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
-11. Data Quality: Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
-12. Geographic Information Systems: Conceptual foundations, including representation and uncertainty; digitize and georeference paper map or plate; acquire and integrate various data types in the GIS database 
-13. Software and Application Development: Evaluate open source software
-14. Working with Tools and Technology: Selecting, using, and maintaining tools and technology to facilitate work activity
+3. Initiative: 
+- Demonstrating gumption at work/school
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work/school
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
+7. Geography: 
+- Understanding the science of place and space; geographic skills
+8. Science and Engineering: 
+- Knowing and applying the principles, rules, and methods of science and engineering to solve problems; subject-specific scientific knowledge
+9. Basic Computer Skills: 
+- Using a computer and related applications to input and retrieve information; navigation and file management and internet and e-mail
+10. Planning and Organizing: 
+- Planning and prioritizing work to manage time effectively and accomplish assigned tasks; planning and organizing; adaptability and flexibility; time management
+11. Data Quality: 
+- Accuracy, resolution, precision, fitness for use; quality control versus quality assurance; data quality implications of legacy systems
+12. Geographic Information Systems: 
+- Conceptual foundations, including representation and uncertainty; digitize and georeference paper map or plate; acquire and integrate various data types in the GIS database 
+13. Software and Application Development: 
+- Evaluate open source software
+14. Working with Tools and Technology: 
+- Selecting, using, and maintaining tools and technology to facilitate work activity
 
 The National Geography Standards:
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
-2. Places and Regions: The physical and human characteristics of places
+   - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+   - How to analyze the spatial organization of people, places, and environments on Earth's surface
+2. Places and Regions: 
+   - The physical and human characteristics of places
 3. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+   - How human actions modify the physical environment
+   - How physical systems affect human systems
 4. The Uses of Geography: 
-  - How to apply geography to interpret the past
-  - How to apply geography to interpret the present and plan for the future
+   - How to apply geography to interpret the past
+   - How to apply geography to interpret the present and plan for the future
 
 
 <div style="background-color:#91ccca;padding: 15px 30px;border-radius: 8px;">
