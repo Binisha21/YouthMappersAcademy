@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gender Terms Drag & Drop</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #b2d8d8;
+    padding: 16px;
+    min-height: 100vh;
+  }
+
+  .header {
+    background: #b2d8d8;
+    border: 3px solid #2c3e6b;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .header h2 {
+    font-size: 1.1rem;
+    color: #1a1a2e;
+    font-weight: 700;
+    flex: 1;
+  }
+
+  .header h2 span {
+    font-weight: 400;
+  }
+
+  .btn-solution {
+    background: #2c3e6b;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-solution:hover { background: #1a2a50; }
+
+  /* Definition pool rows */
+  .definition-pool {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .def-card {
+    background: #e07b39;
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 10px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    text-align: center;
+    cursor: grab;
+    user-select: none;
+    transition: opacity 0.2s, transform 0.15s, box-shadow 0.15s;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .def-card:active { cursor: grabbing; }
+  .def-card.dragging { opacity: 0.4; transform: scale(0.97); }
+  .def-card.placed { opacity: 0; pointer-events: none; height: 0; min-height: 0; padding: 0; margin: 0; overflow: hidden; }
+
+  /* Term grid */
+  .term-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .term-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .drop-zone {
+    width: 100%;
+    min-height: 90px;
+    background: #fff;
+    border: 2px solid #aac8c8;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+    text-align: center;
+    font-size: 0.76rem;
+    line-height: 1.4;
+  }
+
+  .drop-zone.drag-over {
+    border-color: #e07b39;
+    background: #fff5ee;
+  }
+
+  .drop-zone.correct {
+    border-color: #27ae60;
+    background: #eafaf1;
+  }
+
+  .drop-zone.incorrect {
+    border-color: #e74c3c;
+    background: #fdf0ef;
+  }
+
+  .drop-zone .placed-card {
+    background: #e07b39;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 0.76rem;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    cursor: grab;
+  }
+
+  .drop-zone .placed-card:active { cursor: grabbing; }
+
+  .term-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  /* Controls */
+  .controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 6px;
+    flex-wrap: wrap;
+  }
+
+  .btn-check {
+    background: #2c3e6b;
+    color: #fff;
+    border: none;
+    padding: 11px 28px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-check:hover { background: #1a2a50; }
+
+  .btn-reset {
+    background: #fff;
+    color: #2c3e6b;
+    border: 2px solid #2c3e6b;
+    padding: 11px 28px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-reset:hover { background: #eef2ff; }
+
+  /* Score banner */
+  .score-banner {
+    display: none;
+    text-align: center;
+    margin-top: 14px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .score-banner.show { display: block; }
+  .score-banner.perfect { background: #eafaf1; color: #1e8449; border: 2px solid #27ae60; }
+  .score-banner.partial { background: #fef9e7; color: #9a7d0a; border: 2px solid #f1c40f; }
+
+  /* Solution modal */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .modal-overlay.show { display: flex; }
+
+  .modal {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 28px 24px;
+    position: relative;
+  }
+
+  .modal h3 {
+    font-size: 1rem;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .modal-item {
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #222;
+  }
+
+  .modal-item strong { color: #1a1a2e; }
+
+  .btn-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #555;
+    line-height: 1;
+  }
+
+  .btn-close:hover { color: #111; }
+
+  @media (max-width: 680px) {
+    .definition-pool, .term-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 400px) {
+    .definition-pool, .term-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><strong>Instructions:</strong> <span>Drag and drop the definitions (orange boxes) to the correct term.</span></h2>
+  <button class="btn-solution" onclick="openSolution()">SOLUTION</button>
+</div>
+
+<!-- Top definition pool (4 cards) -->
+<div class="definition-pool" id="pool-top"></div>
+
+<!-- Term drop zones -->
+<div class="term-grid" id="term-grid"></div>
+
+<!-- Bottom definition pool (4 cards) -->
+<div class="definition-pool" id="pool-bottom"></div>
+
+<!-- Controls -->
+<div class="controls">
+  <button class="btn-check" onclick="checkAnswers()">Check Answers</button>
+  <button class="btn-reset" onclick="resetAll()">Reset</button>
+</div>
+
+<div class="score-banner" id="score-banner"></div>
+
+<!-- Solution modal -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeSolutionOnOverlay(event)">
+  <div class="modal">
+    <button class="btn-close" onclick="closeSolution()">&#x2715;</button>
+    <h3>Correct Answers:</h3>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script>
+  const data = [
+    {
+      id: "bio-sex",
+      term: "Biological Sex",
+      definition: "Refers to anatomical, physiological, genetic, or physical attributes that determine if a person is male, female, or intersex."
+    },
+    {
+      id: "gender",
+      term: "Gender",
+      definition: "Broadly, gender is a set of socially constructed roles, behaviors, activities, and attributes that a given society considers appropriate specifically surrounding the ideas of masculinity and femininity."
+    },
+    {
+      id: "gender-id",
+      term: "Gender Identity",
+      definition: "An individual's perception and understanding of their gender, which may or may not correspond with their birth sex or their gender expression."
+    },
+    {
+      id: "gender-expr",
+      term: "Gender Expression",
+      definition: "The way in which an individual expresses their gender identity. This is typically through their appearance, dress, and behavior. Gender expression may or may not correspond with their birth sex or their gender identity."
+    },
+    {
+      id: "gender-roles",
+      term: "Gender Roles",
+      definition: "The set of societal expectations for the behavior of women and men, boys and girls. It is heavily influenced by the patriarchal power structure and typically does not allow for flexibility beyond the gender binary."
+    },
+    {
+      id: "gender-eq",
+      term: "Gender Equality",
+      definition: "The state in which access to rights and opportunities is unaffected by gender. It also means that all genders can equitably benefit from resources and policies."
+    },
+    {
+      id: "sex-orient",
+      term: "Sexual Orientation",
+      definition: "The type of sexual, romantic, emotional/spiritual attraction one has the capacity to feel for some others, generally labeled based on the gender relationship between the person and the people they are attracted to."
+    },
+    {
+      id: "gnc",
+      term: "Gender Nonconforming (GNC)",
+      definition: "A term for those who do not follow gender stereotypes. Often an umbrella for nonbinary genders. It is important to respect and use the terms people use for themselves."
+    }
+  ];
+
+  // Shuffle helper
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  let draggedId = null;
+  let draggedFrom = null; // 'pool-top' | 'pool-bottom' | drop zone id
+
+  // State: which definition is in each drop zone
+  const placed = {}; // { termId: defId | null }
+  data.forEach(d => placed[d.id] = null);
+
+  // Shuffled order for definition cards
+  const shuffled = shuffle(data.map(d => d.id));
+  const topPool = shuffled.slice(0, 4);
+  const bottomPool = shuffled.slice(4, 8);
+
+  // Track which pool each unplaced def is in
+  const poolMap = {};
+  topPool.forEach(id => poolMap[id] = 'pool-top');
+  bottomPool.forEach(id => poolMap[id] = 'pool-bottom');
+
+  function getDefById(id) { return data.find(d => d.id === id); }
+
+  function buildCard(defId, fromSource) {
+    const def = getDefById(defId);
+    const card = document.createElement('div');
+    card.className = 'def-card';
+    card.id = `card-${defId}`;
+    card.draggable = true;
+    card.textContent = def.definition;
+    card.addEventListener('dragstart', e => {
+      draggedId = defId;
+      draggedFrom = fromSource;
+      setTimeout(() => card.classList.add('dragging'), 0);
+    });
+    card.addEventListener('dragend', () => card.classList.remove('dragging'));
+    return card;
+  }
+
+  function render() {
+    // Render pools
+    ['pool-top', 'pool-bottom'].forEach(poolId => {
+      const el = document.getElementById(poolId);
+      el.innerHTML = '';
+      const ids = poolId === 'pool-top' ? topPool : bottomPool;
+      ids.forEach(defId => {
+        // Only show if not placed
+        const isPlaced = Object.values(placed).includes(defId);
+        if (!isPlaced) {
+          el.appendChild(buildCard(defId, poolId));
+        } else {
+          // Placeholder to keep grid spacing
+          const ph = document.createElement('div');
+          ph.style.visibility = 'hidden';
+          ph.className = 'def-card';
+          el.appendChild(ph);
+        }
+      });
+    });
+
+    // Render term grid
+    const grid = document.getElementById('term-grid');
+    grid.innerHTML = '';
+    data.forEach(item => {
+      const cell = document.createElement('div');
+      cell.className = 'term-cell';
+
+      const zone = document.createElement('div');
+      zone.className = 'drop-zone';
+      zone.id = `zone-${item.id}`;
+
+      // If something is placed here
+      if (placed[item.id]) {
+        const def = getDefById(placed[item.id]);
+        const placedCard = document.createElement('div');
+        placedCard.className = 'placed-card';
+        placedCard.textContent = def.definition;
+        placedCard.draggable = true;
+        placedCard.addEventListener('dragstart', e => {
+          draggedId = placed[item.id];
+          draggedFrom = `zone-${item.id}`;
+          setTimeout(() => placedCard.classList.add('dragging'), 0);
+        });
+        placedCard.addEventListener('dragend', () => placedCard.classList.remove('dragging'));
+        zone.appendChild(placedCard);
+      }
+
+      zone.addEventListener('dragover', e => {
+        e.preventDefault();
+        zone.classList.add('drag-over');
+      });
+      zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+      zone.addEventListener('drop', e => {
+        e.preventDefault();
+        zone.classList.remove('drag-over');
+        handleDrop(item.id);
+      });
+
+      const label = document.createElement('div');
+      label.className = 'term-label';
+      label.textContent = item.term;
+
+      cell.appendChild(zone);
+      cell.appendChild(label);
+      grid.appendChild(cell);
+    });
+  }
+
+  function handleDrop(termId) {
+    if (!draggedId) return;
+
+    // If dragging from another zone, clear that zone first
+    if (draggedFrom && draggedFrom.startsWith('zone-')) {
+      const oldTermId = draggedFrom.replace('zone-', '');
+      placed[oldTermId] = null;
+    }
+
+    // If this zone already has something, send it back to its pool
+    if (placed[termId]) {
+      const evictedId = placed[termId];
+      // Put it back in whichever pool it came from
+      // (it stays in poolMap, visibility handled by render)
+    }
+
+    placed[termId] = draggedId;
+    draggedId = null;
+    draggedFrom = null;
+
+    // Clear any check highlights
+    clearHighlights();
+    hideBanner();
+    render();
+  }
+
+  function clearHighlights() {
+    document.querySelectorAll('.drop-zone').forEach(z => {
+      z.classList.remove('correct', 'incorrect');
+    });
+  }
+
+  function hideBanner() {
+    const b = document.getElementById('score-banner');
+    b.className = 'score-banner';
+    b.textContent = '';
+  }
+
+  function checkAnswers() {
+    clearHighlights();
+    let correct = 0;
+    let filled = 0;
+
+    data.forEach(item => {
+      const zone = document.getElementById(`zone-${item.id}`);
+      if (!zone) return;
+      if (placed[item.id]) {
+        filled++;
+        if (placed[item.id] === item.id) {
+          zone.classList.add('correct');
+          correct++;
+        } else {
+          zone.classList.add('incorrect');
+        }
+      }
+    });
+
+    const banner = document.getElementById('score-banner');
+    if (filled === 0) {
+      banner.className = 'score-banner partial show';
+      banner.textContent = 'Drag at least one definition to check your answers.';
+      return;
+    }
+
+    if (correct === data.length) {
+      banner.className = 'score-banner perfect show';
+      banner.textContent = `🎉 Perfect score! All ${data.length} definitions matched correctly.`;
+    } else {
+      banner.className = 'score-banner partial show';
+      banner.textContent = `${correct} of ${data.length} correct. Green = correct, Red = try again.`;
+    }
+  }
+
+  function resetAll() {
+    data.forEach(d => placed[d.id] = null);
+    clearHighlights();
+    hideBanner();
+    render();
+  }
+
+  function openSolution() {
+    const content = document.getElementById('modal-content');
+    content.innerHTML = '';
+    data.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'modal-item';
+      div.innerHTML = `<strong>${item.term}:</strong> ${item.definition}`;
+      content.appendChild(div);
+    });
+    document.getElementById('modal-overlay').classList.add('show');
+  }
+
+  function closeSolution() {
+    document.getElementById('modal-overlay').classList.remove('show');
+  }
+
+  function closeSolutionOnOverlay(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeSolution();
+  }
+
+  // Also support dropping back into pools
+  ['pool-top', 'pool-bottom'].forEach(poolId => {
+    // We add drop listeners after render, so delegate via document
+  });
+
+  document.addEventListener('dragover', e => e.preventDefault());
+  document.addEventListener('drop', e => {
+    // If dropped outside any zone, return to pool (do nothing — card stays)
+  });
+
+  render();
+</script>
+</body>
+</html>
