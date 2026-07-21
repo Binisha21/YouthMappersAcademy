@@ -2,6 +2,7 @@
 title: "Field Survey Development"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -12,8 +13,6 @@ jupytext:
 
 ---
 # Field Survey Development
-
-This is the 12th course that make up the Advanced Mapping with YouthMappers learning track.
 
 ## Overview 
 Welcome to Course 12 of the YouthMappers Academy. In this course, we will look at the best practices around field survey development, and how we can turn a problem statement and data model into a concise, clear survey (or questionnaire). We will also explore the various tools (both analog and digital) that are at our disposal to facilitate data collection.
@@ -51,12 +50,12 @@ For the purposes of this course, we will assume that the data being collected is
 
 There are a few simple rules when it comes to crafting survey questions. These rules are especially important when crafting questions for face-to-face surveys. Although we aren’t dealing with a typical “household survey” instrument here, you may still need to engage with local populations for clarity on some of the features you are planning to map. These rules are also relevant in cases where the expected responses or data ranges may seem simple, or obvious.
 
-#### 1. Keep it simple
+#### Keep it simple
 A question shouldn’t raise more questions. Questions should be clearly worded, short, simple, and specific. Avoid using complex words, technical terms, jargon, and phrases that are difficult to understand. Instead, use language that is commonly used by both surveyors and respondents. This is true in cases where the surveyor is simply observing and reporting on a specific feature in the field, or, where a surveyor is directing a question to a respondent.
 
 ![alt text](Module12_Static/12.2.png)
 
-#### 2. No double-barreled questions
+#### No double-barreled questions
 Do not ask double-barreled questions. In other words, don’t ask questions that touch on more than one issue, but only give one opportunity for response. Follow-up questions are the simplest way to get more detailed information about a topic or feature while keeping the confusion to a minimum (remember, in OSM, features can have many tags).
   - If follow-up questions are required for the same map feature, many data collection apps have a feature called skip-logic. Skip-logic creates a custom path through a set of survey questions that varies based on a respondent's previous answers.
 
@@ -65,28 +64,27 @@ Do not ask double-barreled questions. In other words, don’t ask questions that
 :width: 100px
 ```
 
-#### 3. Do not use institutional or academic jargon
+#### Do not use institutional or academic jargon
 Do not assume the participants (or data collectors) are familiar with your industry jargon. Just because a term is frequently used in academic literature, it may hold little or no meaning for the general population. Remember that your survey teams may be drawn from the local population. It is a good idea to “test” your survey and any introductory material with a select group of potential surveyors, or locals, to check for any language issues. 
 
   - For instance, let’s look at the following introduction: "We’re here today to conduct a survey to support a RAP to investigate DRM issues in the community...
     - RAP: Rapid Assessment Program
     - DRM: Disaster Risk Management .....*not exactly obvious, is it?*
 
-#### 4. All terms should be clearly defined (and illustrated if possible)
+#### All terms should be clearly defined (and illustrated if possible)
 If it is important to use specific terms as part of the survey, make sure your training involves a proper definition and description of the term and its usage. This should also be reiterated in either field notes, or as a note that appears with the question. In cases where your survey will involve the categorization of a geographic feature in the field, it is a good idea to include example photos of the different options as part of the training materials (and perhaps also as part of the field packet that surveyors will take to the field). Reinforcement is the best way to communicate a new or important concept. 
 ```{image} Module12_Static/12.4.png
 :alt: alt text
 :width: 100px
 ```
 
-
-#### 5. No leading questions
+#### No leading questions
 Leading questions are questions that subtly prompt the respondent to answer in a particular way. This can also mean questions that are overly assumptive in their wording, such as, “what level of education do you have?” or, “what job do you have?” You don't know if the respondent has a job, or if they were exposed to formal education. This is more of an issue when speaking directly to respondents, rather than in a situation where a surveyor is making a direct observation about a piece of infrastructure. 
 
-#### 6. Do not use biased or emotionally charged terms in your questions
+#### Do not use biased or emotionally charged terms in your questions
 It is very important to double-check the phrasing and any subsequent translation of your survey to make sure that the intended message is being conveyed simply, clearly, and without bias. It is also good to check your terms and wording choice with a community representative before going into the field. What may appear to be an innocuous choice of wording on your part could cause offense or misinterpretation on behalf of the surveyor or respondent. 
 
-#### 7. Avoid the use of negative words
+#### Avoid the use of negative words
 Using negative words in questions confuses people. For example: “Did you not?” or “Do you not?” It’s also leading and assumptive of the answer. Ask something in a clear fashion that allows for an unbiased yes/no answer.
 
 ```{image} Module12_Static/12.5.png
@@ -94,8 +92,7 @@ Using negative words in questions confuses people. For example: “Did you not?�
 :width: 100px
 ```
 
-
-#### 8. Lost in translation
+#### Lost in translation
 In certain cases, you may need to translate your survey/questionnaire into one or more alternate languages. This may be required if you recruit local participants in the data collection, or if your survey is being used in more than one location. It is very important that the survey instrument is easy to use for both the surveyor and the participant. You do not want the surveyor to have to translate on-the-fly (especially in instances where the surveyor might need to communicate directly with survey participants). This can lead to confusion and miscommunication. It is important to have someone fluent in both the language of design and the language of delivery to cross-check all questions and replies. Ideally, you should run a simple pilot to make sure that both surveyors and potential participants understand the instructions, questions, and replies. 
 
 ### Question Response Style 
@@ -115,7 +112,7 @@ Most survey instruments will be composed of a series of questions or prompts. Th
 ![alt text](Module12_Static/12.7.png)
 
 ### Training Your Data Collectors
-A clear set of instructions and adequate training are always REQUIRED in advance of any field data collection effort. Even if your support team has worked closely with you throughout the preparation process, training allows for consistency of approach and an opportunity for any last-minute questions. Training is particularly important if your surveyors are filling out the questionnaire alone, and will not have the opportunity to check-in “on the fly” (though this can be facilitated through a group chat function, using something like WhatsApp). 
+A clear set of instructions and adequate training are always required in advance of any field data collection effort. Even if your support team has worked closely with you throughout the preparation process, training allows for consistency of approach and an opportunity for any last-minute questions. Training is particularly important if your surveyors are filling out the questionnaire alone, and will not have the opportunity to check-in “on the fly” (though this can be facilitated through a group chat function, using something like WhatsApp). 
 
 It is also important to pilot or test the product and **cross-check your survey with a member of the local community.** Remember that there are potentially two levels of interpretation here: your surveyor and the person being surveyed (if that is relevant to the data being collected). This creates at least one if not two chances for misinterpretation.
 
@@ -132,7 +129,7 @@ Through the Women Connect Challenge project in Serengeti, Tanzania, HOT conducte
 
 ## Let's Look at Survey Tools 
 ### Overview 
-Survey instruments can be deployed using a variety of analog and digital tools, allowing mappers to collect geospatial data in the field. There are a variety of tools to use for field mapping, ranging from paper-based options (paper maps and paper questionnaires, often backed up with simple GPS) to GPS-enabled smartphones and tablets. Mobile data collection applications such OpenDataKit, OpenMapKit, and KoBoCollect improve upon traditional GPS and paper-based methods. In many cases, these tools allow us to collect both geographic and attribute data simultaneously. 
+Survey instruments can be deployed using a variety of analog and digital tools, allowing mappers to collect geospatial data in the field. There are a variety of tools to use for field mapping, ranging from paper-based options (paper maps and paper questionnaires, often backed up with simple GPS) to GPS-enabled smartphones and tablets. Mobile data collection applications such as: OpenDataKit, OpenMapKit, and KoBoCollect improve upon traditional GPS and paper-based methods. In many cases, these tools allow us to collect both geographic and attribute data simultaneously. 
 
 Most of the application (app) based tools featured in this course capture the geospatial aspect of the data through either:
 
@@ -157,7 +154,7 @@ ODK Collect is an Android app that replaces paper forms used in survey-based dat
 The main difference between ODK and OMK is that OpenMapKit allows users to tag polygons, such as buildings, that already exist in OSM instead of only being able to add data to GPS points. Forms for OMK are slightly altered from ODK forms to incorporate the OSM tagging scheme and need to be built using spreadsheet software (such as Excel or LibreCalc). This is a much more advanced setup and deployment than standard ODK. You will need to generate extremely high-quality data during your remote mapping stage and be comfortable with simple server setup and management (web-based is fine) to facilitate data transfer with your surveyor's mobile devices.
 
 #### KoBoCollect and the Kobo Toolbox
-[KoBoCollect and the Kobo Toolbox](https://www.kobotoolbox.org/) suite were developed by the Harvard Humanitarian Initiative through funding from USAID, the International Red Cross, and UNOCHA. The Kobo suite is incredibly similar to the ODK toolset and is in fact built on top of the ODK platform.
+[KoBoCollect and the Kobo Toolbox](https://www.kobotoolbox.org/) suite were developed by the Harvard Humanitarian Initiative through funding from USAID (when it was active), the International Red Cross, and UNOCHA. The Kobo suite is incredibly similar to the ODK toolset and is in fact built on top of the ODK platform.
 
 KoBo is seen as a more streamlined and complete solution to the entire survey workflow, covering design, deployment, data management, and analysis. Kobo includes a form builder, an app, a web server, and a dashboard for analyzing and managing data to create maps and reports. If you are new to field data collection, KoBo Toolbox is a complete package in terms of survey administration, and an excellent place to start. It is free to use (without limitations) for registered humanitarian organizations, and free (with some restrictions) for everyone else.
 
@@ -196,18 +193,14 @@ In this tutorial, we’ll walk you through how to use Field Papers to collect 3D
 
 ```
 
-
   **The tools featured above are by no means exhaustive. They are however some of the most popular tools used by the extended OSM community in the field.**
 
-```{tip} 
-YouthMappers Blogspot: Mapping of Food Outlets on University of Ghana Campus
+```{tip}
+YouthMappers Blog: Mapping for Safety – HTU YouthMappers and Ghana National Fire Service
 
-[Mapping of Food Outlets on University of Ghana Campus, Phase One and Two: A Field Paper and Open Data](https://www.youthmappers.org/post/2019/03/05/setco-youthmappers-train-for-womens-connect-challenge-tanzaniat) By Michael Batame, University of Ghana
+[Mapping for Safety: HTU YouthMappers and Ghana National Fire Service – Ho Central Division Collaborate on Fire Hydrant Mapping](https://www.youthmappers.org/post/mapping-for-safety-htu-youthmappers-and-ghana-national-fire-service-ho-central-division-collabora) By Twumasi Vivid, Ho Technical University
 
-Read about the YouthMappers of the University of Ghana and their use of ODK and OpenMapKit to map food outlets on the university campus.
-
-![alt text](Module12_Static/12.14.png)
-
+Discover how HTU YouthMappers partnered with the Ghana National Fire Service (Ho Central Division) to map fire hydrants across the Ho Municipality. Using **KoboCollect**, **OSMAnd**, and **OpenStreetMap**, the team created an open geospatial dataset of critical fire infrastructure to support emergency response, disaster preparedness, and urban safety planning. This project demonstrates how open mapping technologies can be applied to real-world public safety challenges while providing students with valuable field experience in GIS and humanitarian mapping.
 ```
 
 ## Data Collection Workflow 
@@ -292,39 +285,54 @@ The following competencies derived from both the Geospatial Technology Competenc
 
 **<u>The Geospatial Technology Competency Model</u>**
 
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
+1. Interpersonal Skills: 
+  - Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
 
 2. Professionalism: 
   - Demonstrating commitment to the values, standards of conduct, and well-being of one's profession 
   - Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
 
-3. Initiative: Demonstrating gumption at work/school
+3. Initiative: 
+- Demonstrating gumption at work/school
 
-4. Dependability and Reliability: Displaying responsible behaviors at work/school
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work/school
 
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
 
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
 
-7. Geography: Understanding the science of place and space; geographic skills
+7. Geography: 
+- Understanding the science of place and space; geographic skills
 
-8. Teamwork: Working cooperatively with others to complete projects
+8. Teamwork: 
+- Working cooperatively with others to complete projects
 
-9. Communication [Listening and Speaking]: Giving full attention to what others are saying and speaking in English well enough to be understood by others
+9. Communication [Listening and Speaking]: 
+- Giving full attention to what others are saying and speaking in English well enough to be understood by others
 
-10. Critical and Analytical Thinking: Using logic, reasoning, and analysis to address problems
+10. Critical and Analytical Thinking: 
+- Using logic, reasoning, and analysis to address problems
 
-11. Creative Thinking: Recognizing, exploring, and using a broad range of ideas and practices
+11. Creative Thinking: 
+- Recognizing, exploring, and using a broad range of ideas and practices
 
-12. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks
+12. Planning and Organizing: 
+- Planning and prioritizing work to manage time effectively and accomplish assigned tasks
 
-13. Problem Solving and Decision Making: Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
+13. Problem Solving and Decision Making: 
+- Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
 
-14. Working with Tools and Technology: Selecting, using, and maintaining tools and technology to facilitate work activity
+14. Working with Tools and Technology: 
+- Selecting, using, and maintaining tools and technology to facilitate work activity
 
-15. Checking, Examining, and Recording: Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic format
+15. Checking, Examining, and Recording: 
+- Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic format
 
-16. Software and Application Development: Evaluate open source software
+16. Software and Application Development: 
+- Evaluate open source software
 
 17. Core Geospatial Competencies: 
   - Compare spatial data models, such as vector, raster, and object
@@ -336,20 +344,20 @@ The following competencies derived from both the Geospatial Technology Competenc
   **<u>The National Geography Standards</u>**
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
+   - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+   - How to analyze the spatial organization of people, places, and environments on Earth's surface
 
 2. Places and Regions: 
-  - The physical and human characteristics of places
-  - How culture and experience influence people's perceptions of places and regions
+   - The physical and human characteristics of places
+   - How culture and experience influence people's perceptions of places and regions
 
 3. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+   - How human actions modify the physical environment
+   - How physical systems affect human systems
 
 4. The Uses of Geography: 
-  - How to apply geography to interpret the past
-  - How to apply geography to interpret the present and plan for the future
+   - How to apply geography to interpret the past
+   - How to apply geography to interpret the present and plan for the future
 
 
 
