@@ -2,6 +2,7 @@
 title: "Planning a Field Project"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -17,7 +18,7 @@ jupytext:
 Welcome to Course 11 of the YouthMappers Academy. In this course, you will learn how to craft a problem statement to help you articulate the specific goals of your research and the data necessary to achieve them. 
 
 ## Overview 
-The key to successful field work is a meticulously planned tactical approach to your data collection exercise. This begins with a clear definition of the problem you are about to address. In this course, you will learn how to formulate a problem statement, which will help you to formally articulate and communicate your overall research agenda and to prioritize the data necessary to achieve it. You will learn how to develop a simple field work strategy, which involves dissecting your work into tasks while acknowledging the timeline sensitivities and resources required. You will also learn how to illustrate your field work strategy on a detailed timeline, denoting tasks, dependencies, and resources required. 
+The key to successful field work is a meticulously planned tactical approach to your data collection exercise. This begins with a clear definition of the problem you are about to address. 
 
 **In this course, you will learn:**
 - How to formulate a problem statement to articulate and communicate your research agenda
@@ -37,9 +38,11 @@ The key to successful field work is a meticulously planned tactical approach to 
 
 Research starts with a desire to better understand and potentially address a problem. In the context of YouthMappers, this is usually a problem relating to development⏤very often in a community or location that is already well known to us. Being close to a problem (either through research familiarity or geographic proximity) doesn’t always make it easier when it comes to designing research and planning field work. This is why we should always adopt a systematic approach to the design and planning process. 
 
-All good research begins with a problem statement.
+**"All good research begins with a problem statement."**
 
-In a couple of words, brainstorm your answer to the following question: *How would you define a problem statement?*
+In a couple of words, brainstorm your answer to the following question: 
+
+*How would you define a problem statement?*
 
 ### What is a Problem Statement?
 A problem statement is a short description of issues you intend to address through the course of your research. It should contain a clear and concise articulation of the issues themselves, the end goal of any intervention you propose, and the methods used to get there. A good problem statement should outline any data to be collected and include a preliminary acknowledgment of the primary stakeholders involved and a specific geographic scope for the assignment.
@@ -79,7 +82,7 @@ Here is where you do a preliminary identification of your stakeholders. A stakeh
 
 Not all problem statements consider a specific time period or duration of the issues at hand, but the concept of time could be critical to defining the scope of your research, and the ultimate timing of your field work. Things like flood seasons and election cycles are important considerations. Do you need to collect your data by a certain window, to inform an intervention in a timely manner? Or, could social unrest associated with elections or major events interrupt fieldwork plans? 
 
-*For you to think about: *
+*For you to think about:*
 - When does the issue occur? 
 - Is it persistent or cyclical? 
 - Is it something we can predict with any degree of confidence? 
@@ -116,7 +119,7 @@ The following recommendations refer to the tone of the written statement itself.
 
 **Keep it short and focused:** The purpose of a problem statement is to lay out the primary issues at hand (one or two key issues at most), the key players, and the potential solution. The problem statement does not provide a complete overview of the project process. The statement should be a short paragraph, consisting of a few sentences at most. Keep your sentences short, and your language simple.
 
-**Know your audience:** It is important that the style and tone of language that you use is appropriate for your intended audience. Remember to use short, direct sentences, and simple language, as this will serve best for most audiences. You can, if required, redraft a more formal version of your statement for an academic audience.Minimize the technical language: Try to minimize the use of difficult technical terms. Never use acronyms, unless you are prepared (and have the space) to explain them. You will never know when your statement may be used out of context. It should make sense as a stand-alone statement, without deeper explanation (or an accompanying lexicon). This tip is closely tied to knowing your audience.
+**Know your audience:** It is important that the style and tone of language that you use is appropriate for your intended audience. Remember to use short, direct sentences, and simple language, as this will serve best for most audiences. You can, if required, redraft a more formal version of your statement for an academic audience.
 
 **Minimize the technical language:** Try to minimize the use of difficult technical terms. Never use acronyms, unless you are prepared (and have the space) to explain them. You will never know when your statement may be used out of context. It should make sense as a stand-alone statement, without deeper explanation (or an accompanying lexicon). This tip is closely tied to knowing your audience.
 
@@ -150,11 +153,9 @@ YouthMappers Blogspot: Power Mapping Brings Rapid Reliable Energy to Rural Commu
 
 [Power Mapping Brings Rapid Reliable Energy to Rural Communities](https://www.youthmappers.org/post/power-mapping-brings-rapid-reliable-energy-to-rural-communities) By Patricia Solís (YouthMappers), Tommy Charles (OSM Sierra Leone), Elena van Hove (Arizona State University), Christopher Beddow (Mapillary)
 
-Mapillary is teaming up with YouthMappers, researchers at Arizona State University, the OSM chapter in Sierra Leone, and other partners to map fundamental spatial features that speed up efforts to design and install mini-grids in rural areas.
+Mapillary, now part of Meta, collaborated with YouthMappers, researchers at Arizona State University, the OSM chapter in Sierra Leone, and other partners on an initiative to map fundamental spatial features that support the design and installation of mini-grids in rural areas. Learn more about Mapillary [here](https://www.mapillary.com/) 
 
 ![alt text](Module11_Static/11.5.png)
-
-
 ```
 
 ### Stakeholder Mapping 
@@ -209,6 +210,12 @@ In Course 1 we learned about the importance of ethics and etiquette in the open-
 
 **WE BELIEVE IN HUMAN DIGNITY:** We strive to create a culture of honor in both online and in-person communications. In exchanges between chapters around the world, respect for different cultural practices, norms, and values is paramount. We strictly forbid harassment of any kind.
 
+```{admonition} Watch This!
+See how community mapping creates real impact — and why mapping *with* communities, not *for* them, is at the heart of everything YouthMappers does.
+
+**Watch the Video**: [How Community Mapping Can Improve Lives](https://www.youtube.com/watch?v=zgodnnE8V_8)
+```
+
 ## Data Assessment 
 ### Overview 
 Before diving headlong into data collection, you should first take a look at all current and available datasets for your study area. Perhaps some of the data that you require to address your problem statement already exists, and your new data collection campaign would be better suited to updating or supplementing this, or expanding on the area of interest. Even if existing datasets do not amply address your research needs, supplemental data for analysis, overlay (how the data overlaps), and general context is also important, and a preliminary assessment will help you identify what’s out there.
@@ -230,7 +237,7 @@ There is no ultimate template for the assessment of geospatial data, but there a
 Depending on the problem that you are trying to address, you may want to categorize your data thematically, depending on the role it will play in your analysis. Some data layers or sources may be relegated to the base data category (such as roads, rivers, and administrative boundaries), whereas other layers might be identified as hazards (such as flooding, flood plains, landslide-prone areas), or exposure layers (such as buildings, critical infrastructure, schools, hospitals). This is more an exercise in housekeeping than a key requirement, but it may help you identify data gaps in your proposed analysis going forward.
 
 ### Where to Start? 
-The easiest way to begin your assessment is a simple web search. Some of the base data layers you need may be openly available from trusted sources, such as the Humanitarian Data Exchange (HDX). 
+The easiest way to begin your assessment is a simple web search. Some of the base data layers you need may be openly available from trusted sources, such as the [Humanitarian Data Exchange (HDX)](https://data.humdata.org/ ). 
 
 ```{image} Module11_Static/11.11.png
 :alt: alt text
@@ -391,7 +398,7 @@ In order to manage task dependencies, and to plan for any unexpected interruptio
 ## Want to Dig a Little Deeper?
 Refer to the information below to learn more about field survey development.
 
-- [Planning an Open Cities Mapping Project](https://opendri.org/resource/planning-an-open-cities-mapping-project/) offers a comprehensive understanding of the design and implementation of an Open Cities mapping project for both practitioners in the field and those interested in a higher-level understanding of the process. The guide's content is based on experience in implementing the initial Open Cities projects in Bangladesh, Nepal, and Sri Lanka as well as on previous mapping project experience.
+- [Planning an Open Cities Mapping Project](https://documents1.worldbank.org/curated/en/134531592556070536/pdf/Open-Data-for-Resilience-Initiative-Planning-and-Open-Cities-Mapping-Project.pdf) offers a comprehensive understanding of the design and implementation of an Open Cities mapping project for both practitioners in the field and those interested in a higher-level understanding of the process. The guide's content is based on experience in implementing the initial Open Cities projects in Bangladesh, Nepal, and Sri Lanka as well as on previous mapping project experience.
 
 - [The HOT Toolbox](https://toolbox.hotosm.org/pages/introduction/how_to_use_toolbox/) is a comprehensive guide that takes a project manager through the entire mapping workflow, from project design through to the more technical aspects of technology options for field deployment. The front section [Introduction to Designing a Mapping Project](https://toolbox.hotosm.org/pages/1-running-a-mapping-project/0100_introduction_to_designing_a_mapping_project/) is particularly relevant to this course. 
 
@@ -408,48 +415,63 @@ The National Geography Standards are benchmarks of geographic literacy to determ
 The following competencies derived from both the Geospatial Technology Competency Model, and the National Geography Standards are central to the successful completion of **YouthMappers Academy Badge 11: Planning a Field Project.**
 
 **The Geospatial Technology Competency Model**
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
+1. Interpersonal Skills: 
+- Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
 2. Professionalism: 
-  - Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
-  - Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
-3. Initiative: Demonstrating gumption at work/school
-4. Dependability and Reliability: Displaying responsible behaviors at work/school
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
-7. Geography: Understanding the science of place and space; geographic skills
-8. Teamwork: Working cooperatively with others to complete projects
-9. Communication [Listening and Speaking]: Giving full attention to what others are saying and speaking in English well enough to be understood by others
-10. Critical and Analytical Thinking: Using logic, reasoning, and analysis to address problems
-11. Creative Thinking: Recognizing, exploring, and using a broad range of ideas and practices
-12. Planning and Organizing: Planning and prioritizing work to manage time effectively and accomplish assigned tasks
-13. Problem Solving and Decision Making: Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
-14. Working with Tools and Technology: Selecting, using, and maintaining tools and technology to facilitate work activity
-15. Checking, Examining, and Recording: Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic format
-16. Software and Application Development: Evaluate open source software
+- Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
+- Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
+3. Initiative: 
+- Demonstrating gumption at work/school
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work/school
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
+7. Geography: 
+- Understanding the science of place and space; geographic skills
+8. Teamwork: 
+- Working cooperatively with others to complete projects
+9. Communication [Listening and Speaking]: 
+- Giving full attention to what others are saying and speaking in English well enough to be understood by others
+10. Critical and Analytical Thinking: 
+- Using logic, reasoning, and analysis to address problems
+11. Creative Thinking: 
+- Recognizing, exploring, and using a broad range of ideas and practices
+12. Planning and Organizing: 
+- Planning and prioritizing work to manage time effectively and accomplish assigned tasks
+13. Problem Solving and Decision Making: 
+- Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
+14. Working with Tools and Technology: 
+- Selecting, using, and maintaining tools and technology to facilitate work activity
+15. Checking, Examining, and Recording: 
+- Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic format
+16. Software and Application Development: 
+- Evaluate open source software
 17. Core Geospatial Competencies: 
-  - Compare spatial data models, such as vector, raster, and object
-  - Data analysis involving spatial relationships, such as distance, direction, and topology
-  - Perform GIS analysis, including measurement, query and retrieval, vector overlay, map algebra
-  - GIS hardware and software capabilities, including real-time GPS/GIS mapping systems
-  - Recognize opportunities to create mobile end-user applications
+- Compare spatial data models, such as vector, raster, and object
+- Data analysis involving spatial relationships, such as distance, direction, and topology
+- Perform GIS analysis, including measurement, query and retrieval, vector overlay, map algebra
+- GIS hardware and software capabilities, including real-time GPS/GIS mapping systems
+- Recognize opportunities to create mobile end-user applications
 
-  **The National Geography Standards**
+**The National Geography Standards**
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
+   - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+   - How to analyze the spatial organization of people, places, and environments on Earth's surface
 
 2. Places and Regions: 
-  - The physical and human characteristics of places
-  - How culture and experience influence people's perceptions of places and regions
+   - The physical and human characteristics of places
+   - How culture and experience influence people's perceptions of places and regions
 
 3. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+   - How human actions modify the physical environment
+   - How physical systems affect human systems
 
 4. The Uses of Geography: 
-  - How to apply geography to interpret the past
-  - How to apply geography to interpret the present and plan for the future
+   - How to apply geography to interpret the past
+   - How to apply geography to interpret the present and plan for the future
 
 
 
