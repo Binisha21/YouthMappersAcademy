@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Work Quiz</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f7f7;
+  padding: 20px;
+}
+.question {
+  font-size: .95rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff;
+  border: 1.5px solid #c8dada;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+label span {
+  font-size: .88rem;
+  line-height: 1.5;
+  color: #222;
+}
+input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: #2c3e6b;
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.btn-check {
+  background: #2c3e6b;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-size: .88rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-check:hover { background: #1a2a50; }
+.btn-reset {
+  background: #fff;
+  color: #2c3e6b;
+  border: 2px solid #2c3e6b;
+  padding: 10px 24px;
+  font-size: .88rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-reset:hover { background: #eef2ff; }
+#feedback {
+  display: none;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: .87rem;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<p class="question">Which of the following are highly biased "reasons" given for why women should not be given jobs or opportunities that require field work? <em>Check all that apply.</em></p>
+
+<label id="lbl-1">
+  <input type="checkbox" id="cb1">
+  <span>They might become pregnant or have difficulties completing field work while they are menstruating. On a similar note, women won't want to be away from home for very long because they prefer to or have to care for their children and partner.</span>
+</label>
+
+<label id="lbl-2">
+  <input type="checkbox" id="cb2">
+  <span>It isn't safe for women to travel alone or to be in the field without protection — they might be attacked and can't defend themselves.</span>
+</label>
+
+<label id="lbl-3">
+  <input type="checkbox" id="cb3">
+  <span>Women aren't physically fit for or will be slower at conducting field work that could demand long hours outside, walking through challenging terrain, and dealing with bad weather or other physically difficult conditions.</span>
+</label>
+
+<label id="lbl-4">
+  <input type="checkbox" id="cb4">
+  <span>Men on the field work team won't feel comfortable spending so much time in proximity to women. Field work is a great bonding experience among members of the team, and men will feel like they have to be on guard and can't relax if women are around.</span>
+</label>
+
+<div class="controls">
+  <button class="btn-check" onclick="fwCheck()">Check answer</button>
+  <button class="btn-reset" onclick="fwReset()">Reset</button>
+</div>
+
+<div id="feedback"></div>
+
+<script>
+function fwCheck() {
+  var c1 = document.getElementById('cb1').checked;
+  var c2 = document.getElementById('cb2').checked;
+  var c3 = document.getElementById('cb3').checked;
+  var c4 = document.getElementById('cb4').checked;
+  var all = c1 && c2 && c3 && c4;
+  var none = !c1 && !c2 && !c3 && !c4;
+  var fb = document.getElementById('feedback');
+
+  if (none) {
+    fb.style.display = 'block';
+    fb.style.background = '#fef9e7';
+    fb.style.border = '1.5px solid #f1c40f';
+    fb.style.color = '#9a7d0a';
+    fb.innerHTML = '<strong>Please select at least one option</strong> before checking your answer.';
+    return;
+  }
+
+  var checks = [c1, c2, c3, c4];
+  for (var i = 1; i <= 4; i++) {
+    var lbl = document.getElementById('lbl-' + i);
+    if (checks[i - 1]) {
+      lbl.style.background = '#eafaf1';
+      lbl.style.borderColor = '#27ae60';
+    } else {
+      lbl.style.background = '#fdf0ef';
+      lbl.style.borderColor = '#e74c3c';
+    }
+  }
+
+  fb.style.display = 'block';
+  if (all) {
+    fb.style.background = '#eafaf1';
+    fb.style.border = '1.5px solid #27ae60';
+    fb.style.color = '#1e8449';
+    fb.innerHTML = '<strong>Correct!</strong> Unfortunately, ALL of the above are typically quoted as "reasons" or "justifications" for why a woman should not receive a job opportunity that involves field work.';
+  } else {
+    fb.style.background = '#fdf0ef';
+    fb.style.border = '1.5px solid #e74c3c';
+    fb.style.color = '#922b21';
+    fb.innerHTML = '<strong>Not quite — try again.</strong> Unfortunately, ALL of the above are typically quoted as "reasons" or "justifications" for why a woman should not receive a job opportunity that involves field work. Make sure all four boxes are checked.';
+  }
+}
+
+function fwReset() {
+  ['cb1','cb2','cb3','cb4'].forEach(function(id) {
+    document.getElementById(id).checked = false;
+  });
+  for (var i = 1; i <= 4; i++) {
+    var lbl = document.getElementById('lbl-' + i);
+    lbl.style.background = '#fff';
+    lbl.style.borderColor = '#c8dada';
+  }
+  var fb = document.getElementById('feedback');
+  fb.style.display = 'none';
+  fb.innerHTML = '';
+}
+</script>
+</body>
+</html>

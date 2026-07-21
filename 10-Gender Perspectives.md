@@ -2,6 +2,7 @@
 title: "Gender Dimensions"
 author: "YouthMappers Academy"
 date: "2024"
+update: "2026"
 jupytext:
   formats: md:myst
   text_representation:
@@ -11,12 +12,12 @@ jupytext:
     jupytext_version: 1.11.5
 
 ---
-# Gender Dimensions
+# Gender Perspectives
 
 Welcome to Course 10 of the YouthMappers Academy. In this course, you will learn about the fundamentals of gender-related concepts, inclusive language, gender discrimination, and how to make your YouthMappers chapter a welcoming and safe space where all members can be their best selves.
 
 ## Overview 
-As members of the YouthMappers network, we all need to acknowledge the importance of gender awareness, and how this relates to peer leadership and peer interactions in our global community. The course will help you understand how gender bias and discrimination negatively impact women and other gender minorities, and how these biases also limit and hurt men. The course also discusses the challenges women and other gender minorities face as members of the YouthMappers network and OpenStreetMap communities and as new professionals in geospatial and technology.  You will also learn about the fundamentals of gender-related concepts, inclusive language, gender discrimination, and how to make your YouthMappers chapter a welcoming and safe space where all members can be their best selves. 
+As members of the YouthMappers network, we all need to acknowledge the importance of gender awareness, and how this relates to peer leadership and peer interactions in our global community. The course will help you understand how gender bias and discrimination negatively impact women and other gender minorities, and how these biases also limit and hurt men. The course also discusses the challenges women and other gender minorities face as members of the YouthMappers network and OpenStreetMap communities and as new professionals in geospatial and technology. 
 
 **In this course, you will learn:**
 - To appreciate why gender awareness is important to your role as a member of the YouthMappers network, and as a leader among your peers and in your community
@@ -24,11 +25,11 @@ As members of the YouthMappers network, we all need to acknowledge the importanc
 - To identify the challenges women and other gender minorities face as members of the YouthMappers network and OpenStreetMap communities, and as new professionals in geospatial and technology
 - The role of gender stereotypes and norms, and how these are determined by our societies⏤not our biology
 - To understand how gender bias and discrimination negatively impact women and other gender minorities, and how they also limit and hurt men
-- To identify ways for your chapter to become involved with Everywhere She Maps and to increase women’s participation in the leadership of your chapter
+- To identify ways for your chapter to become involved with [Everywhere She Maps](https://www.youthmappers.org/everywhereshemaps) and to increase women’s participation in the leadership of your chapter
 
 ## Gender Basics 
 ### The Importance of Gender to the YouthMappers Network
-Fewer than 10% of OSM contributors are women, and critical features and attributes that are most relevant to women are missing from maps as a result of their underrepresentation in the geospatial field. Map features and attributes most relevant to women are not well depicted through commonly available mapping platforms. Better representation of healthcare and education services, safety shelters, transportation options, female access to power infrastructure, and economic opportunities are among the many features that strengthen conditions for women when adequately depicted through apps, websites, and other mapping platforms.
+As few as 2–5% of OSM contributors globally are women, and critical features and attributes that are most relevant to women are missing from maps as a result of their underrepresentation in the geospatial field. Map features and attributes most relevant to women are not well depicted through commonly available mapping platforms. Better representation of healthcare and education services, safety shelters, transportation options, female access to power infrastructure, and economic opportunities are among the many features that strengthen conditions for women when adequately depicted through apps, websites, and other mapping platforms. In contrast, approximately 40% of YouthMappers members are female students — a testament to the network's ongoing commitment to gender-inclusive participation, and a reflection of what is possible when communities actively work to lower barriers to women's engagement in open mapping.
 
 In addition, women are typically underrepresented in the technology workforce, including those comprising the geospatial industry. This results in fewer opportunities for women’s participation in many facets of the rapidly growing geospatial industry including location-based intelligence, location-based digital services, mapping, and geographic information systems. YouthMappers have much better gender-balanced participation in many chapters and as a global network.
 
@@ -86,7 +87,7 @@ We live in a complex world! No one factor is isolated from other factors. Other 
 3. **Gender:** "Broadly, gender is a set of socially constructed roles, behaviors, activities, and attributes that a given society considers appropriate" specifically surrounding the ideas of masculinity and femininity - PFLAG.org
 4. **Gender Identity:**  is an individual's perception and understanding of their gender, which may or may not correspond with their birth sex or their gender expression.
 5. **Gender Expression:** is the way in which an individual expresses their gender identity. This is typically through their appearance, dress, and behavior. Gender expression may or may not correspond with their birth sex or their gender identity.
-6. **Gender Nonconforming:** "A term for those who do not follow gender stereotypes. Often an umbrella for nonbinary genders...It is important to respect and use the terms people use for themselves" - PFLAG.org
+6. **Gender Nonconforming:** "A term for those who do not follow gender stereotypes. Often an umbrella for nonbinary genders. It is important to respect and use the terms people use for themselves" - PFLAG.org
 7. **Gender Roles:**  are the set of societal expectations for the behavior of women and men, boys and girls. It is heavily influenced by the patriarchal power structure and typically does not allow for flexibility beyond the gender binary.
 8. **Gender Equality:** the state in which access to rights and opportunities is unaffected by gender. It also means that all genders can equitably benefit from resources and policies.
 
@@ -95,9 +96,10 @@ It is important to understand that many of the terms introduced previously exist
 
 For example, we're socialized to think of biological sex as either male (XY chromosomes) or female (XX chromosomes), when in fact [biological sex exists on a spectrum](https://www.youtube.com/watch?v=kT0HJkr1jj4). It's possible for a human to have anywhere from one to three X chromosomes! Intersex is the umbrella term to describe these variations (see the diagram to the right). 
 
-Gender identity, gender expression, and sexual orientation also exist on spectrums. The interaction of all four of these spectrums makes up parts of our identity. Gender identity and gender expression are defined in the “Key Gender Terminology” above. Sexual orientation is defined as “the type of sexual, romantic, emotional/spiritual attraction one has the capacity to feel for some others, generally labeled based on the gender relationship between the person and the people they are attracted to.” [(A Guide to Gender (2nd Edition): The Social Justice Advocate’s Handbook)](https://www.samkillermann.com/work/guide-to-gender/). 
+Gender identity, gender expression, and sexual orientation also exist on spectrums. The interaction of all four of these spectrums makes up parts of our identity. Gender identity and gender expression are defined in the “Key Gender Terminology” above. Sexual orientation is defined as “the type of sexual, romantic, emotional/spiritual attraction one has the capacity to feel for some others, generally labeled based on the gender relationship between the person and the people they are attracted to.” [A Guide to Gender (2nd Edition): The Social Justice Advocate’s Handbook](https://www.medfieldsel.com/uploads/1/0/0/8/100870892/%5Be-book%5D_a_guide_to_gender__2nd_edition__-_by_sam_killermann.pdf).
 
-You may know of the acronym “LGBTQI+” (or something similar). You might be very familiar with this acronym, but we still want to cover it in case you aren’t familiar with the English acronym or some of the concepts contained within. LGBTQI+ is “an acronym that stands for lesbian, gay, bisexual, transgender, queer, intersex, and other people of diverse genders and sexualities. Variations of this acronym (that add or drop letters, like A for asexual) exist as well.” (USAID). Here are definitions of each of the terms in the LGBTQI+ acronym, from [USAID](https://web.archive.org/web/20221015223034/https://www.usaid.gov/sites/default/files/documents/_External_Draft_Integrating_LGBTQI_Considerations_In_Education_Programming_210601-508.pdf): 
+
+You may know of the acronym “LGBTQI+” (or something similar). You might be very familiar with this acronym, but we still want to cover it in case you aren’t familiar with the English acronym or some of the concepts contained within. LGBTQI+ is “an acronym that stands for lesbian, gay, bisexual, transgender, queer, intersex, and other people of diverse genders and sexualities. Variations of this acronym (that add or drop letters, like A for asexual) exist as well.” Here are definitions of each of the terms in the LGBTQI+ acronym, from [USAID](https://web.archive.org/web/20221015223034/https://www.usaid.gov/sites/default/files/documents/_External_Draft_Integrating_LGBTQI_Considerations_In_Education_Programming_210601-508.pdf): 
 
 **“Lesbian”** refers to women who are emotionally and romantically attracted to other women. 
 
@@ -118,10 +120,9 @@ In 2017, the Scientific American put together a diagram of how sex determination
 
 In the following activity, you will learn the definitions of several key inclusive language terms.
 
-**Instructions:** Read the definition within each of the orange boxes, then drag and drop each definition into the box with the matching term. Once you have assigned all of the definitions to their correct terms, see below for the correct answers. 
+**Instructions:** Read the definition within each of the orange boxes, then drag and drop each definition into the box with the matching term. Once you have assigned all of the definitions to their correct terms, see below for the correct answers.
 
 ![alt text](Module10_Static/10.03.png)
-
 
 **Correct Answers:**
 ![alt text](Module10_Static/10.04.png)
@@ -130,17 +131,15 @@ In the following activity, you will learn the definitions of several key inclusi
 #### Overview 
 When you hear someone else use language that is not inclusive or offensive, it’s normal to feel angry, upset, or confused.  However, it’s possible the person does not even know they said something offensive, so being angry with them will not help the situation. Instead of scolding or accusing them, treat the situation as an opportunity to help them understand why their language was not inclusive and how it impacts others. 
 
-This can be difficult and uncomfortable to do, especially if the other person is an authority figure, like a professor, or someone who you don’t want to upset, like a friend or family member.  It’s important to consider the other person’s authority over you and if they will potentially punish or penalize you for addressing their language (Harvard Business Review). You are not obligated to speak up, especially if your job or academic security, or personal safety could be at risk as a result. 
+This can be difficult and uncomfortable to do, especially if the other person is an authority figure, like a professor, or someone who you don’t want to upset, like a friend or family member.  It’s important to consider the other person’s authority over you and if they will potentially punish or penalize you for addressing their language. You are not obligated to speak up, especially if your job or academic security, or personal safety could be at risk as a result. 
 
 ![alt text](Module10_Static/10.05.png)
 
 If you don’t feel comfortable using any of the options above, you can also redirect the conversation by changing the subject or finding a reason to excuse yourself from the conversation. 
 
-In addition to challenging offensive language, be sure to compliment and congratulate people when they use inclusive language. As Sam Killermann, author of A Guide to Gender: The Social Justice Advocate’s Handbook, writes, “encouraging positive behavior can be just as (and more) effective at moving us toward progress as discouraging negative behavior.” (A Guide to Gender (2nd Edition): The Social Justice Advocate’s Handbook) 
+In addition to challenging offensive language, be sure to compliment and congratulate people when they use inclusive language. As Sam Killermann, author of [A Guide to Gender: The Social Justice Advocate’s Handbook](https://www.medfieldsel.com/uploads/1/0/0/8/100870892/%5Be-book%5D_a_guide_to_gender__2nd_edition__-_by_sam_killermann.pdf), writes, “encouraging positive behavior can be just as (and more) effective at moving us toward progress as discouraging negative behavior.” 
 
-For a deep dive on gender identity, discrimination, and ways to improve gender equity, check out the book: A Guide to Gender: The Social Justice Advocate’s Handbook
-
-To learn more about responding to offensive comments, read [“How to Respond to an Offensive Comment at Work”](https://hbr.org/2017/02/how-to-respond-to-an-offensive-comment-at-work) from *Harvard Business Review.*
+To learn more about recognizing and responding to bias and discrimination in community settings, including discriminatory jokes and microaggressions, and outlines strategies for moving from bystander to "upstander, read [“Bystander Intervention Tip Sheet”](https://www.apa.org/pi/health-equity/bystander-intervention).
 
 #### Language is Dynamic 
 All languages⏤not just words related to gender⏤constantly evolve and change. Words like “emoji” and “blog” were probably not commonly used when you were born, but they have become a normal part of our everyday lives. Similarly, gender-related words change over time when there are shifts in what language is considered inclusive. Therefore, it’s important to keep an open mind and always be willing to learn and adapt. And most importantly, remember we are all learning to be more inclusive together!
@@ -151,7 +150,9 @@ All languages⏤not just words related to gender⏤constantly evolve and change.
 ```
 
 
-In a couple of words, brainstorm your answer to the following question below: *What does inclusivity mean to you?*
+In a couple of words, brainstorm your answer to the following question below: 
+
+***What does inclusivity mean to you?***
 
 #### Personal Pronouns
 People have the right to decide for themselves what they would like their personal pronouns to be. In English, pronouns are used to refer to one’s self or another person or an object without having to use a name. Pronouns include words like:
@@ -231,7 +232,9 @@ People ride lifts in this way because of strongly held social norms. No one expl
 
 It’s not usually illegal to break social norms, but we face very high pressure to conform to them. 
 
-In a couple of words, brainstorm your answer to the following question below: What are some examples of social norms?
+In a couple of words, brainstorm your answer to the following question below: 
+
+***What are some examples of social norms?***
 
 #### Gender Norms 
 Gender norms are social norms specifically related to gender. Our families often teach us and model gender norms from a very early age, since the consequences for breaking them can be severe. Gender norms can dictate nearly every aspect of our lives, from what we should wear to what (and how much) we should eat to what we should want to be when we “grow up” (just to name a few examples). 
@@ -355,7 +358,9 @@ A leaky pipeline is commonly used as a visual image to demonstrate the many reas
 
 For women and gender-nonconforming people, the path from undergraduate student to a PhD and/or leadership role has many more challenges and potential pitfalls than the path for men does. In other words, there are a lot more leaks in the pipeline that women have to move through to achieve as much as their men peers. Watch [this short](https://www.youtube.com/watch?v=liCIvVbMG2I) video or study the image below to further understand this concept. 
 
-*Note: the video and image specifically reference the leaky pipeline for women who work in STEM (science, technology, engineering, and mathematics), but the concept can apply to nearly all academic fields and professions.*
+```{note}
+The video and image specifically reference the leaky pipeline for women who work in STEM (science, technology, engineering, and mathematics), but the concept can apply to nearly all academic fields and professions.
+```
 
 Some criticize the leaky pipeline metaphor because they think it puts too much blame on individual women who leave their careers and doesn’t acknowledge that these women still often have incredible careers in other fields or are highly fulfilled by their choice to be a full-time caregiver. ([Frontiers in Psychology](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.00037/full)) Many of these critiques are valid, and no metaphor can be perfect, but we think the leaky pipeline is still a useful concept to demonstrate the barriers women face to advancing in their careers.
 
@@ -509,7 +514,7 @@ You can also seek to identify and understand challenges that women, gender-nonco
 
 We could ask so many more questions like this, but the point is that women and girls often face more challenges in accessing opportunities and resources than men and boys do. Some of these challenges can be illuminated⏤and partially solved⏤by collecting and analyzing open geographic data. 
 
-#### Phase 2: Generate Iedas for Change 
+#### Phase 2: Generate Ideas for Change 
 Once you’ve listened, discussed, and listened some more, it’s time to use what you learned in Phase 1 to develop ideas for potential solutions. Remember, you may want to focus on generating ideas to:
 
 - Remove barriers to women’s and other gender minorities’ full participation in and leadership of your chapter, and/or
@@ -598,7 +603,13 @@ The processes listed above are inspired by Human-Centered Design. If you are int
 ## Want to Dig a Little Deeper?
 Refer to the information below to learn more about gender perspectives.
 
-- **Global Gender Gap Report 2021:** Another generation of women will have to wait for gender parity, according to the World Economic Forum’s [Global Gender Gap Report 2021](https://www.weforum.org/publications/global-gender-gap-report-2021/). As the impact of the COVID-19 pandemic continues to be felt, closing the global gender gap has increased by a generation from 99.5 years to 135.6 years. Explore the report to learn more about the gender gap and strategies to close it. 
+- [**Global Gender Gap Report 2025:**](https://www.weforum.org/publications/global-gender-gap-report-2025/) The Global Gender Gap Index annually benchmarks the current state and evolution of gender parity across four key dimensions (subindexes): 
+  - Economic Participation and Opportunity, 
+  - Educational Attainment, 
+  - Health and Survival, and 
+  - Political Empowerment. 
+
+Since launching in 2006, it is the longest-standing index tracking the progress of numerous countries’ efforts towards closing these gaps over time.
 
 - **3 Women Mapmakers Who Changed The Way We View The World:** [Learn about three women cartographers](https://www.here.com/learn/blog/three-women-who-mapped-the-unseen) who made groundbreaking contributions to the field of geography and mapmaking. 
 
@@ -634,8 +645,6 @@ The Genderbread Person is a teaching tool for breaking the big concept of gender
 
 More information can be found on the [Genderbread website](https://www.itspronouncedmetrosexual.com/2018/10/the-genderbread-person-v4/).
 
-- [Click here](https://cdn.filestackcontent.com/WgyPKLbFTp6nQZgeihqx?policy=eyJleHBpcnkiOjc5NDUxNTc2OTAsImNhbGwiOlsicmVhZCIsImNvbnZlcnQiXSwiaGFuZGxlIjoiV2d5UEtMYkZUcDZuUVpnZWlocXgifQ==&signature=2349fd1b8939d5c24bb4610737262196cf87b27d1a32788773acdefacd1d6620) to access a completed copy of the Genderbread Person worksheet.
-- [Click here](https://cdn.filestackcontent.com/fTgZ02bcRSWpJEhFoYbO?policy=eyJleHBpcnkiOjc5NDUxNjAyNTYsImNhbGwiOlsicmVhZCIsImNvbnZlcnQiXSwiaGFuZGxlIjoiZlRnWjAyYmNSU1dwSkVoRm9ZYk8ifQ==&signature=065a7a5361e27c7ba2e2005dbd8c0b8b5ea09e15c3a7de20df506d1debee8476) to access a blank copy of the Genderbread Person worksheet.
 
 ## Conclusion 
 ### Skills, Proficiencies, and Standards 
@@ -648,36 +657,48 @@ The National Geography Standards are benchmarks of geographic literacy to determ
 The following competencies derived from both the Geospatial Technology Competency Model and the National Geography Standards are central to the successful completion of YouthMappers Academy Course 10: Gender Perspectives
 
 **The Geospatial Technology Competency Model**
-1. Interpersonal Skills: Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
+1. Interpersonal Skills: 
+- Demonstrating the ability to work effectively with others, through interaction with peers and course moderators
 2. Professionalism: 
   - Demonstrating commitment to the values, standards of conduct, and well-being of one's profession  
   - Know codes of ethics and rules of conduct; legal, ethical, and business aspects of data sharing
-3. Initiative: Demonstrating gumption at work/school
-4. Dependability and Reliability: Displaying responsible behaviors at work/school
-5. Lifelong Learning: Displaying a willingness to learn and apply new knowledge and skills
-6. Reading: Understanding written sentences and paragraphs in work-related documents  
-7. Geography: Understanding the science of place and space; geographic skills
-8. Teamwork: Working cooperatively with others to complete projects
-9. Communication [Listening and Speaking]: Giving full attention to what others are saying and speaking in English well enough to be understood by others
-10. Critical and Analytical Thinking: Using logic, reasoning, and analysis to address problems
-11. Creative Thinking: Recognizing, exploring, and using a broad range of ideas and practices
-12. Problem Solving and Decision Making: Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
+3. Initiative: 
+- Demonstrating gumption at work/school
+4. Dependability and Reliability: 
+- Displaying responsible behaviors at work/school
+5. Lifelong Learning: 
+- Displaying a willingness to learn and apply new knowledge and skills
+6. Reading: 
+- Understanding written sentences and paragraphs in work-related documents  
+7. Geography: 
+- Understanding the science of place and space; geographic skills
+8. Teamwork: 
+- Working cooperatively with others to complete projects
+9. Communication [Listening and Speaking]: 
+- Giving full attention to what others are saying and speaking in English well enough to be understood by others
+10. Critical and Analytical Thinking: 
+- Using logic, reasoning, and analysis to address problems
+11. Creative Thinking: 
+- Recognizing, exploring, and using a broad range of ideas and practices
+12. Problem Solving and Decision Making: 
+- Applying critical-thinking skills to solve problems by generating, evaluating, and implementing solutions
 
 **The National Geography Standards:**
 
 1. The World in Spatial Terms: 
-  - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
-  - How to analyze the spatial organization of people, places, and environments on Earth's surface
-2. Places and Regions: The physical and human characteristics of places
+   - How to use maps and other geographic representations, geospatial technologies, and spatial thinking to understand and communicate information
+   - How to analyze the spatial organization of people, places, and environments on Earth's surface
+2. Places and Regions: 
+   - The physical and human characteristics of places
 3. Human Systems: 
-  - The characteristics, distribution, and migration of human populations on Earth's surface
-  - The characteristics, distribution, and complexity of Earth's cultural mosaics
+   - The characteristics, distribution, and migration of human populations on Earth's surface
+   - The characteristics, distribution, and complexity of Earth's cultural mosaics
 4. Environment and Society: 
-  - How human actions modify the physical environment
-  - How physical systems affect human systems
+   - How human actions modify the physical environment
+   - How physical systems affect human systems
 5. The Uses of Geography: 
-  - How to apply geography to interpret the past
-  - How to apply geography to interpret the present and plan for the future
+   - How to apply geography to interpret the past
+   - How to apply geography to interpret the present and plan for the future
 
 
 
